@@ -8,6 +8,9 @@ book:
     - name:
         given: Paul Richard 
         family: Halmos
+  downloads: [pdf]
+  repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
+  repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
     - intro.qmd
