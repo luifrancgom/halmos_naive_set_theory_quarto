@@ -1,10 +1,13 @@
 project:
   type: book
+  output-dir: _book
 
 book:
-  title: "halmos"
-  author: "Norah Jones"
-  date: "8/3/2025"
+  title: "Naive Set Theory"
+  author:
+    - name:
+        given: Paul Richard 
+        family: Halmos
   chapters:
     - index.qmd
     - intro.qmd
@@ -17,6 +20,5 @@ format:
       - brand
   pdf:
     documentclass: scrreprt
-
 
 
