@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+// Paragraphs
+p {
+  text-align: justify;
+  text-indent: 1.5em;
+
+  &:first-of-type {
+    text-indent: 0;
+  }
+}
+
+// Signature
+.signature p {
+  text-align: right;
+}
