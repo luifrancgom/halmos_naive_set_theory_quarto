@@ -6,22 +6,21 @@ book:
   title: "Naive Set Theory"
   author:
     - name:
-        given: Paul Richard 
+        given: Paul R. 
         family: Halmos
   downloads: [pdf]
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
   repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
 
 format:
   html:
+    embed-resources: true
     theme:
       - cosmo
-      - brand
+      - scss/custom.scss
   pdf:
     documentclass: scrreprt
 
-
+engine: knitr
