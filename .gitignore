@@ -1,3 +1,10 @@
-# Quarto files
+## R
+# History files
+.Rhistory
+
+# Quarto
+## Quarto internal metadata
 /.quarto/
+
+## Output directory
 /_book/
