@@ -13,14 +13,45 @@ book:
   repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
+    - preface.qmd
+    - chapter_1.qmd
 
 format:
   html:
+    # table of contents
+    toc: true
+    toc-depth: 1
+    toc-title: Contents
+    toc-expand: true
+    # rendering
     embed-resources: true
+    # format options
     theme:
       - cosmo
       - scss/custom.scss
   pdf:
-    documentclass: scrreprt
+    # table of contents
+    toc: true
+    toc-depth: 1
+    toc-title: Contents
+    # fonts
+    fontsize: 12pt
+    # colors
+    linkcolor: black
+    citecolor: black
+    urlcolor: blue
+    colorlinks: true
+    # layout
+    documentclass: scrbook
+    classoption: [pagesize=auto]
+    papersize: b5
+    # includes
+    include-in-header: 
+      text: |
+        \usepackage{imakeidx}
+        \makeindex[intoc=true, columns=2, columnseprule=true, options= -s latex/indexstyle.ist]
+    include-after-body: 
+      text: |
+        \printindex
 
 engine: knitr
