@@ -42,7 +42,7 @@ $$
 all other sentences are obtained from such *atomic* sentences`\index{atomic sentence}`{=latex} by repeated applications of the usual logical operators`\index{logical operators}`{=latex}, subject only to the minimal courtesies of grammar and unambiguity. To make the definition more explicit (and longer) it is necessary to append to it a list of the "usual logical operators" and the rules of syntax. An adequate (and, in fact, redundant) list of the former contains seven items:
 
 |         *and,*`\index{and}`{=latex}
-|         *or (in the sense of "either — or — or both")*,`\index{or}`{=latex}
+|         *or (in the sense of "either — or — or both"),*`\index{or}`{=latex}
 |         *not,*`\index{not}`{=latex}
 |         *if—then—(or implies),*`\index{imply}\index{if}`{=latex}
 |         *if and only if,*
@@ -64,13 +64,13 @@ To every set $A$ and to every condition $S(x)$ corresponds a set $B$ whose eleme
 A "condition"`\index{condition}`{=latex} here is just a sentence. The symbolism is intended to indicate the letter $x$ is *free* in the sentence $S(x)$; that means that $x$ occurs in $S(x)$ at least once without being introduced by one of the phrases "for some $x$" or "for all $x$". It is an immediate consequence of the axiom of extension that the axiom of specification determines the set $B$ uniquely. To indicate the way $B$ is obtained from $A$ and from $S(x)$ it is customary to write
 
 $$
-B  = \{ x \in A: S(x) \} 
+B  = \{ x \in A: S(x) \}.
 $$
 
 To obtain an amusing and instructive application of the axiom of specification, consider, in the role of $S(x)$, the sentence
 
 $$
-\text{not } (x \in x)
+\text{not } (x \in x).
 $$
 
 It will be convenient, here and throughout, to write "$x \notin  A$" instead of "not $(x \in A)$"; in this notation, the role of $S(x)$ is now played by
