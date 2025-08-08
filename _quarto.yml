@@ -3,6 +3,7 @@ project:
   output-dir: _book
 
 book:
+  # book
   title: "Naive Set Theory"
   author:
     - name:
@@ -53,5 +54,11 @@ format:
     include-after-body: 
       text: |
         \printindex
+
+# Partial solution to include axioms
+crossref:
+  cnj-title: Axiom
+  cnj-prefix: Axiom
+  cnj-labels: arabic
 
 engine: knitr
