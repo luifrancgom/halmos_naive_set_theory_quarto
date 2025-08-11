@@ -17,6 +17,7 @@ book:
     - preface.qmd
     - chapter_1.qmd
     - chapter_2.qmd
+    - chapter_3.qmd
 
 format:
   html:
