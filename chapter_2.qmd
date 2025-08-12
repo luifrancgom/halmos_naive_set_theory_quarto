@@ -50,7 +50,7 @@ all other sentences are obtained from such *atomic* sentences`\index{atomic sent
 |         *for some (or there exists),*`\index{some}`{=latex}
 |         *for all.*`\index{all}`{=latex}
 
-As for the rules of sentence construction, they can be described as follows. (i) Put "not" before a sentence and enclose the result between parentheses. (The reason for parentheses, here and below, is to guarantee unambiguity. Note, incidentally, that they make all other punctuation marks unnecessary. The complete parenthetical equipment that the definition of sentences calls for is rarely needed. We shall always omit as many perentheses as it seems safe to omit without leading to confusion. In normal mathematical practice, to be followed in this book, several different sizes and shapes of parentheses are used, but that is for visual convenience only.) (ii) Put "and" or "or" or "if and only if" between two sentences and enclose the result between parentheses. (iii) Replace the dashes in "if—then—" by sentences and enclose the result in parentheses. (iv) Replace the dash in "for some—" or in "for all—" by a letter, follow the result by a sentence, and enclose the whole in parentheses. (If the letter used does not occur in the sentence, no harm is done. According to the usual and natural convention "for some $y\ (x \in A)$" just means "$ x \in A$". It is equally harmless if the letter used has already been used with "for some—." Recall that "for some $x\ (x \in A)$" means the same as  "for some $y\ (y \in A)$"; it follows that a judicious change of notation will always avert alphabetic collisions.)
+As for the rules of sentence construction, they can be described as follows. (i) Put "not" before a sentence and enclose the result between parentheses. (The reason for parentheses, here and below, is to guarantee unambiguity. Note, incidentally, that they make all other punctuation marks unnecessary. The complete parenthetical equipment that the definition of sentences calls for is rarely needed. We shall always omit as many parentheses as it seems safe to omit without leading to confusion. In normal mathematical practice, to be followed in this book, several different sizes and shapes of parentheses are used, but that is for visual convenience only.) (ii) Put "and" or "or" or "if and only if" between two sentences and enclose the result between parentheses. (iii) Replace the dashes in "if—then—" by sentences and enclose the result in parentheses. (iv) Replace the dash in "for some—" or in "for all—" by a letter, follow the result by a sentence, and enclose the whole in parentheses. (If the letter used does not occur in the sentence, no harm is done. According to the usual and natural convention "for some $y\ (x \in A)$" just means "$x \in A$". It is equally harmless if the letter used has already been used with "for some—." Recall that "for some $x\ (x \in A)$" means the same as  "for some $y\ (y \in A)$"; it follows that a judicious change of notation will always avert alphabetic collisions.)
 
 We are now ready to formulate the major principle of set theory, often referred to by its German name *Aussonderungsaxiom*`\index{Aussonderungsaxiom}`{=latex}.
 
@@ -92,7 +92,7 @@ $$
 \mathit{nothing\ contains\ everything,}
 $$
 
-or, more spectacularly
+or, more spectacularly,
 
 $$
 \mathit{there\ is\ no\ universe.}
@@ -100,4 +100,4 @@ $$
 
 "Universe"`\index{universe}`{=latex} here is used in the sense of "universe of discourse," meaning, in any particular discussion, a set that contains all the objects that enter into that discussion. 
 
-In older (pre-axiomatic) approaches to set theory, the existence of universe was taken for granted, and the argument in the preceding paragraph was known as the *Russell's paradox*`\index{Russell}`{=latex}. The moral is that it is impossible, especially in mathematics, to get something for nothing. To specify a set, it is not enough to pronounce some magic words (which may form a sentence such as "$x \notin z$"); it is necessary also to have at hand a set to whose elements the magic words apply.
+In older (pre-axiomatic) approaches to set theory, the existence of universe was taken for granted, and the argument in the preceding paragraph was known as the *Russell's paradox*`\index{Russell}`{=latex}. The moral is that it is impossible, especially in mathematics, to get something for nothing. To specify a set, it is not enough to pronounce some magic words (which may form a sentence such as "$x \notin x$"); it is necessary also to have at hand a set to whose elements the magic words apply.
