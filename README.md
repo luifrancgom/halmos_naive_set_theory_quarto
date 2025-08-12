@@ -1,1 +1,1 @@
-# Halmos Naive Set Theory using Quarto
+# Halmos Naive Set Theory in Quarto
