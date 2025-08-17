@@ -18,7 +18,7 @@ $$
 \{ x \in U: x \in X \mathit{\ for\ some\ } X \mathit{\ in\ } \mathcal{C} \}.
 $$
 
-The condition here is a translation into idiomatic usage of the mathematically more acceptable "*for some* $X\ (x \in X \mathit{\ and\ } X \in \mathcal{C})$.") It follows that, for every $x$, a necessary and sufficient condition that $x$ belong to this set is that $x$ belong to $X$ for some $X$ in $\mathcal{C}$. If we change notation and call the new set $U$ again, then
+(The condition here is a translation into idiomatic usage of the mathematically more acceptable "*for some* $X\ (x \in X \mathit{\ and\ } X \in \mathcal{C})$.") It follows that, for every $x$, a necessary and sufficient condition that $x$ belong to this set is that $x$ belong to $X$ for some $X$ in $\mathcal{C}$. If we change notation and call the new set $U$ again, then
 
 $$
 U = \{ x: x \in X \mathit{\ for\ some\ } X \mathit{\ in\ }  \mathcal{C} \}.
@@ -183,7 +183,7 @@ $$
 V = \{ x \in A: x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
 $$
 
-(The condition means "*for all* $X$ *(if* $X \in \mathcal{C}$, *then* $x \in X$).") The dependence of $V$ on the arbitrary choice of $A$ is illusory; in fact
+(The condition means "*for all* $X$ (*if* $X \in \mathcal{C}$, *then* $x \in X$).") The dependence of $V$ on the arbitrary choice of $A$ is illusory; in fact
 
 $$
 V = \{ x \in X: x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
