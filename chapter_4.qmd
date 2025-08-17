@@ -186,7 +186,7 @@ $$
 (The condition means "*for all* $X$ (*if* $X \in \mathcal{C}$, *then* $x \in X$).") The dependence of $V$ on the arbitrary choice of $A$ is illusory; in fact
 
 $$
-V = \{ x \in X: x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
+V = \{ x : x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
 $$
 
 The set $V$ is called the *intersection*`\index{intersection}`{=latex} of the collection $\mathcal{C}$ of sets; the axiom of extension guarantees its uniqueness. The customary notation is similar the one for unions: instead of the unobjectionable but unpopular
