@@ -20,6 +20,7 @@ book:
     - chapter_3.qmd
     - chapter_4.qmd
     - chapter_5.qmd
+    - chapter_6.qmd
 
 format:
   html:
