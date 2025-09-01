@@ -27,6 +27,7 @@ book:
     - chapter_6.qmd
     - chapter_7.qmd
     - chapter_8.qmd
+    - chapter_9.qmd
 
 format:
   html:
@@ -41,6 +42,10 @@ format:
     theme:
       - cosmo
       - scss/custom.scss
+    html-math-method: mathjax
+    # includes
+    include-in-header: 
+      - file: partials/html/header.html
   pdf:
     # table of contents
     toc: true
