@@ -4,11 +4,15 @@ project:
 
 book:
   # book
-  title: "Naive Set Theory"
+  title: Naive Set Theory
   author:
     - name:
-        given: Paul R. 
+        given: Paul Richard 
         family: Halmos
+        literal: Paul R. Halmos
+      affiliations:
+        - name: University of Michigan
+          position: Professor of Mathematics
   downloads: [pdf]
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
   repo-actions: [edit, source, issue]
@@ -45,22 +49,21 @@ format:
     # fonts
     fontsize: 12pt
     # colors
-    linkcolor: black
-    citecolor: black
+    linkcolor: blue
+    citecolor: blue
     urlcolor: blue
     colorlinks: true
     # layout
     documentclass: scrbook
     classoption: [pagesize=auto]
     papersize: b5
+    indent: false
     # includes
     include-in-header: 
-      text: |
-        \usepackage{imakeidx}
-        \makeindex[intoc=true, columns=2, columnseprule=true, options= -s latex/indexstyle.ist]
+      - file: partials/latex/header.tex
     include-after-body: 
-      text: |
-        \printindex
+      - file: partials/latex/after-body.tex
+    # rendering
 
 # Partial solution to include axioms
 crossref:

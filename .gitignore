@@ -1,6 +1,9 @@
-## R
-# History files
+# R
+## History files
 .Rhistory
+
+# RStudio files
+.Rproj.user/
 
 # Quarto
 ## Quarto internal metadata
@@ -8,4 +11,3 @@
 
 ## Output directory
 /_book/
-.Rproj.user
