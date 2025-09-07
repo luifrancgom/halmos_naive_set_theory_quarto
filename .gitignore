@@ -11,3 +11,4 @@
 
 ## Output directory
 /_book/
+**/*.quarto_ipynb

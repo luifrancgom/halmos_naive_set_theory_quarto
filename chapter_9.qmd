@@ -10,7 +10,7 @@ $$
 
 according as it is or is not important to emphasize the index set $I$. It follows immediately from the definition of unions that $x \in \bigcup_{i} A_{i}$ if and only if $x$ belongs to $A_{i}$ for at least one $i$. If $I = 2$, so that the range of the family $\{ A_{i} \}$ is the unordered pair $\{ A_{0}, A_{i} \}$, then $\bigcup_{i}A_{i} =  A_{0} \cup A_{1}$. Observe that there is no loss of generality in considering families of sets instead of arbitrary collections of sets; every collection of sets is the range of some family. If, indeed, $\mathcal{C}$ is a collection of sets, let $\mathcal{C}$ itself play the role of the index set, and consider the identity mapping on $\mathcal{C}$ in the role the family. 
 
-The algebraic laws satisfied by the operation of union for pairs can be generalized to arbitrary unions. Suppose, for instance, that $\{ I_{j} \}$ is a family of sets with domain $J$, say; write $K = \bigcup_{j}I_{j}$, and let $\{ A_{k} \}$ be a family sets with domain $K$. It is then not difficult to prove that 
+The algebraic laws satisfied by the operation of union for pairs can be generalized to arbitrary unions. Suppose, for instance, that $\{ I_{j} \}$ is a family of sets with domain $J$, say; write $K = \bigcup_{j}I_{j}$, and let $\{ A_{k} \}$ be a family of sets with domain $K$. It is then not difficult to prove that 
 
 $$
 \bigcup_{k \in K}A_{k} = \bigcup_{j \in J}\left( \bigcup_{i \in I_{j}}A_{i} \right);
