@@ -29,6 +29,8 @@ book:
     - chapter_8.qmd
     - chapter_9.qmd
     - chapter_10.qmd
+    - chapter_11.qmd
+    - chapter_12.qmd
 
 format:
   html:
