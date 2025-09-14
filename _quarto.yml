@@ -59,7 +59,7 @@ format:
     colorlinks: true
     # layout
     documentclass: scrbook
-    classoption: [pagesize=auto]
+    classoption: [headsepline=true, pagesize=auto]
     papersize: b5
     indent: true
     # includes

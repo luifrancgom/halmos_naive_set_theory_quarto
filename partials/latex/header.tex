@@ -16,13 +16,15 @@
   \begingroup
     \edef\ltmp{\detokenize{#2}}%
     \ifx\ltmp\@empty
-      % Unnumbered chapters
+      % Unnumbered chapters: 
+      % thin rule + centered uppercase title
       \rule{\textwidth}{2pt}\par\nointerlineskip
       \vspace{1ex}%
       \centering\Huge\MakeUppercase{#3}\par
       \vspace{4ex}%
     \else
-      % Numbered chapters
+      % Numbered chapters:
+      % thick rule, thin rule, label, thin rule, title
       \rule{\textwidth}{8pt}\par\nointerlineskip
       \vspace{0.3ex}%
       \rule{\textwidth}{2pt}\par\nointerlineskip
@@ -37,6 +39,21 @@
   \endgroup
 }
 \makeatother
+
+% ==============================
+% Page headers
+% ==============================
+\usepackage{scrlayer-scrpage}        % KOMA: header/footer control
+\clearpairofpagestyles               % remove default styles
+\automark[chapter]{chapter}          % set running head from chapter titles
+\setkomafont{pagehead}{\normalfont\normalsize} % header font style
+
+\ihead{\pagemark}                    % page number on inner side
+\ohead{\MakeUppercase{\headmark}}    % chapter title on outer side (uppercase)
+
+\renewcommand*\chaptermarkformat{%   % how chapter marks are printed
+  \MakeUppercase{\chaptername~\thechapter\autodot\enskip}%
+}
 
 % ==============================
 % Index
