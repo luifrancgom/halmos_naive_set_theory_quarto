@@ -11,5 +11,12 @@ $if(subtitle)$
 \subtitle{$subtitle$}
 $endif$
 $-- This supports Quarto's authors normalization
-\author{$for(authors)$$it.name.literal$$sep$ \and $endfor$}
+\author{%
+$for(by-author)$
+  $it.name.literal$%
+  $if(it.affiliations)$
+    $for(it.affiliations)$ \\{\small\itshape $it.name$} $endfor$
+  $endif$
+  $sep$ \and
+$endfor$}
 \date{$date$}

@@ -12,7 +12,6 @@ book:
         literal: Paul R. Halmos
       affiliations:
         - name: University of Michigan
-          position: Professor of Mathematics
   downloads: [pdf]
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
   repo-actions: [edit, source, issue]
@@ -35,10 +34,7 @@ book:
 format:
   html:
     # table of contents
-    toc: true
-    toc-depth: 1
-    toc-title: Contents
-    toc-expand: true
+    toc: false
     # rendering
     embed-resources: true
     # format options
@@ -51,9 +47,7 @@ format:
       - file: partials/html/header.html
   pdf:
     # table of contents
-    toc: true
-    toc-depth: 1
-    toc-title: Contents
+    toc: false
     # fonts
     fontsize: 12pt
     # colors
@@ -72,6 +66,9 @@ format:
     include-after-body: 
       - file: partials/latex/after-body.tex
     # rendering
+    template: partials/latex/template.tex
+    template-partials: 
+      - partials/latex/title.tex
 
 # Partial solution to include axioms
 crossref:

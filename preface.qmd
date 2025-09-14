@@ -21,3 +21,18 @@ P. R. H.
 P. R. H.
 :::
 ::::::
+
+<!-- Move the table of contents, then call \mainmatter -->
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\clearpage
+\begingroup
+  \renewcommand*\contentsname{Contents}
+  \hypersetup{linkcolor=black}
+  \setcounter{tocdepth}{1}
+  \tableofcontents
+\endgroup
+\mainmatter
+```
+:::
