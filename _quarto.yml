@@ -46,6 +46,8 @@ format:
     include-in-header: 
       - file: partials/html/header.html
   pdf:
+    # format options
+    pdf-engine: xelatex
     # table of contents
     toc: false
     # fonts
@@ -59,7 +61,7 @@ format:
     documentclass: scrbook
     classoption: [pagesize=auto]
     papersize: b5
-    indent: false
+    indent: true
     # includes
     include-in-header: 
       - file: partials/latex/header.tex

@@ -4,6 +4,41 @@
 \usepackage{mathtools}
 
 % ==============================
+% Chapter headers
+% ==============================
+% Chapter label
+\renewcommand*{\chapterformat}{%
+  \centering\Huge CHAPTER~\thechapter
+}
+% Chapter title
+\makeatletter
+\renewcommand*{\chapterlinesformat}[3]{%
+  \begingroup
+    \edef\ltmp{\detokenize{#2}}%
+    \ifx\ltmp\@empty
+      % Unnumbered chapters
+      \rule{\textwidth}{2pt}\par\nointerlineskip
+      \vspace{1ex}%
+      \centering\Huge\MakeUppercase{#3}\par
+      \vspace{4ex}%
+    \else
+      % Numbered chapters
+      \rule{\textwidth}{8pt}\par\nointerlineskip
+      \vspace{0.3ex}%
+      \rule{\textwidth}{2pt}\par\nointerlineskip
+      \vspace{1ex}%
+      #2\par\nointerlineskip
+      \vspace{1ex}%
+      \rule{\textwidth}{2pt}\par\nointerlineskip
+      \vspace{1ex}%
+      \centering\Huge\MakeUppercase{#3}\par
+      \vspace{4ex}%
+    \fi
+  \endgroup
+}
+\makeatother
+
+% ==============================
 % Index
 % ==============================
 \usepackage{imakeidx}
