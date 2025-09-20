@@ -30,6 +30,7 @@ book:
     - chapter_10.qmd
     - chapter_11.qmd
     - chapter_12.qmd
+    - chapter_13.qmd
 
 format:
   html:
