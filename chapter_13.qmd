@@ -1,6 +1,6 @@
 # Arithmetic
 
-The introduction of addition for natural numbers is a typical example of definition by induction. Indeed, it follows from the recursion theorem that for each natural number there exists a function $s_{m}$ from $\omega$ to $\omega$ such that $s_{m}(0) = m$ and such that $s_{m}(n^{+}) = (s_{m}(n))^{+}$ for every natural number $n$; the value $s_{m}(n)$ is, by definition, the ¨*sum*`\index{sum}`{=latex} $m + n$. The general arithmetic properties of addition are proved by repeated applications of the principle of mathematical induction. Thus, for instance, addition is associative. This means that 
+The introduction of addition for natural numbers is a typical example of definition by induction. Indeed, it follows from the recursion theorem that for each natural number there exists a function $s_{m}$ from $\omega$ to $\omega$ such that $s_{m}(0) = m$ and such that $s_{m}(n^{+}) = (s_{m}(n))^{+}$ for every natural number $n$; the value $s_{m}(n)$ is, by definition, the *sum*`\index{sum}`{=latex} $m + n$. The general arithmetic properties of addition are proved by repeated applications of the principle of mathematical induction. Thus, for instance, addition is associative. This means that 
 
 $$
 (k + m) + n = k + (m + n) 
