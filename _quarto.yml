@@ -38,7 +38,7 @@ format:
     # table of contents
     toc: false
     # rendering
-    embed-resources: true
+    embed-resources: false
     # format options
     theme:
       - cosmo
