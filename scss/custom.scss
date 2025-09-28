@@ -6,6 +6,15 @@ p {
   text-align: justify;
 }
 
+p:not(:first-of-type) {
+  text-indent: 1em;
+}
+
+// Small caps
+.smallcaps {
+  font-variant: small-caps;
+}
+
 // Signature
 .signature p {
   text-align: right;

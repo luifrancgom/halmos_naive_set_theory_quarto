@@ -1,0 +1,13 @@
+# Zorn's Lemma
+
+An existence theorem asserts the existence of an object belonging to a certain set and possessing certain properties. Many existence theorems can be formulated (or, if need be, reformulated) so that the underlying set is a partially ordered set and the crucial property is maximality. Our next purpose is to state and prove the most important theorem of this kind.
+
+::: {#lem-zorn}
+
+## Zorn's lemma`\index{Zorn}`{=latex}
+
+If $X$ is a partially ordered set such that every chain in $X$ has an upper bound, then $X$ contains a maximal element. 
+
+:::
+
+`\textsc{Discussion}`{=latex}`<span class="smallcaps">Discussion</span>`{=html}. Recall that a chain is a totally ordered set.
