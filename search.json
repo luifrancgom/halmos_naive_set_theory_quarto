@@ -168,5 +168,15 @@
     "crumbs": [
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>The Axiom Of Choice</span>"
     ]
+  },
+  {
+    "objectID": "chapter_16.html",
+    "href": "chapter_16.html",
+    "title": "16  Zorn’s Lemma",
+    "section": "",
+    "text": "An existence theorem asserts the existence of an object belonging to a certain set and possessing certain properties. Many existence theorems can be formulated (or, if need be, reformulated) so that the underlying set is a partially ordered set and the crucial property is maximality. Our next purpose is to state and prove the most important theorem of this kind.\n\nLemma 16.1 (Zorn’s lemma) If \\(X\\) is a partially ordered set such that every chain in \\(X\\) has an upper bound, then \\(X\\) contains a maximal element.\n\nDiscussion. Recall that a chain is a totally ordered set.",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Zorn's Lemma</span>"
+    ]
   }
 ]
