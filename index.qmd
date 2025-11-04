@@ -12,14 +12,12 @@ As mentioned, the original book is public domain and, so, freely available in th
 
 I thought about writting a short story about Paul R. Halmos, since it's common for books to do this specially after the author has deceased. However, I couldn't do a better job than someone just searching on Google and/or Wikipedia. So, for now, I will just say that this book has a special place in my heart. It was one of the first works that introduced and helped me push througth writting proofs. And at the end, I fell in love not only with it, but with mathematics overall. I hope that anybody that found this version can have the same outcome as I did. Now read it, absorb it and forget it.
 
-::: {.content-visible when-format="pdf"}
-\begin{flushright}
-Matheus Girola Macedo Barbosa - 01/07/2024
-\end{flushright}
-:::
+<!--
+Check
+https://github.com/orgs/quarto-dev/discussions/13178
+https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
+-->
 
-:::::: {.content-visible when-format="html"} 
-::: {.signature}
+::: {.flushright latex=""}
 Matheus Girola Macedo Barbosa - 01/07/2024
 :::
-::::::
