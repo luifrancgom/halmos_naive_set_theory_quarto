@@ -35,6 +35,7 @@ book:
     - chapter_15.qmd
     - chapter_16.qmd
     - chapter_17.qmd
+    - chapter_18.qmd
 
 format:
   html:
