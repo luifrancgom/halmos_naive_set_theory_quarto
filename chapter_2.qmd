@@ -71,7 +71,7 @@ $$
 To obtain an amusing and instructive application of the axiom of specification, consider, in the role of $S(x)$, the sentence
 
 $$
-\text{not } (x \in x).
+\mathit{not\ } (x \in x).
 $$
 
 It will be convenient, here and throughout, to write "$x \notin  A$" instead of "not $(x \in A)$"; in this notation, the role of $S(x)$ is now played by
