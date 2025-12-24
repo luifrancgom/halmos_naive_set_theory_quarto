@@ -37,6 +37,7 @@ book:
     - chapter_17.qmd
     - chapter_18.qmd
     - chapter_19.qmd
+    - chapter_20.qmd
 
 format:
   html:
