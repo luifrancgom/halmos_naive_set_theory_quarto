@@ -38,6 +38,7 @@ book:
     - chapter_18.qmd
     - chapter_19.qmd
     - chapter_20.qmd
+    - chapter_21.qmd
 
 format:
   html:
