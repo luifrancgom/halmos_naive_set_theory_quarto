@@ -10,6 +10,9 @@ book:
         given: Paul Richard 
         family: Halmos
         literal: Paul R. Halmos
+      # Arbitrary metadata: position
+      # https://quarto.org/docs/journals/authors.html#arbitrary-metadata
+      position: Professor of Mathematics
       affiliations:
         - name: University of Michigan
   downloads: [pdf]

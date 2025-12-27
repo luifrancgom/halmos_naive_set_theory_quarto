@@ -14,8 +14,9 @@ $-- This supports Quarto's authors normalization
 \author{%
 $for(by-author)$
   $it.name.literal$%
+  $if(it.metadata.position)$ \\ {\small\itshape $it.metadata.position$}$endif$%
   $if(it.affiliations)$
-    $for(it.affiliations)$ \\{\small\itshape $it.name$} $endfor$
+    $for(it.affiliations)$ \\ {\small\itshape $it.name$}$endfor$%
   $endif$
   $sep$ \and
 $endfor$}
