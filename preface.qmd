@@ -10,17 +10,15 @@ Instead of *Naive set theory* a more honest title for the book would have been *
 
 This is not to say that the contents of this book are unusually difficult or profound. What is true is that the concepts are very general and very abstract, and that, therefore, they may take some getting used to. It is a mathematical truism, however, that the more generally a theorem applies, the less deep it is. The student's task in learning set theory is to steep himself in unfamiliar but essentially shallow generalities till they become so familiar that they can be used with almost no conscious effort. In other words, general set theory is pretty trivial stuff really, but, if you want to be a mathematician, you need some, and here it is; read it, absorb it, and forget it.
 
-::: {.content-visible when-format="pdf"}
-\begin{flushright}
-P. R. H.
-\end{flushright}
-:::
+<!--
+Check
+https://github.com/orgs/quarto-dev/discussions/13178
+https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
+-->
 
-:::::: {.content-visible when-format="html"} 
-::: {.signature}
+::: {.flushright latex=""}
 P. R. H.
 :::
-::::::
 
 <!-- Move the table of contents, then call \mainmatter -->
 

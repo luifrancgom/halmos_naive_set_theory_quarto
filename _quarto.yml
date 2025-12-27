@@ -14,6 +14,7 @@ book:
         - name: University of Michigan
   downloads: [pdf]
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
+  issue-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues
   repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
@@ -44,7 +45,8 @@ book:
 format:
   html:
     # table of contents
-    toc: false
+    toc: true
+    toc-location: right
     # rendering
     embed-resources: false
     # format options
