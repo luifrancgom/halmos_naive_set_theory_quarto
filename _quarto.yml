@@ -44,6 +44,7 @@ book:
     - chapter_20.qmd
     - chapter_21.qmd
     - chapter_22.qmd
+    - chapter_23.qmd
 
 format:
   html:

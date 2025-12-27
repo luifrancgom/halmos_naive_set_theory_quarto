@@ -1,4 +1,4 @@
-# The Axiom Of Choice
+# The Axiom Of Choice {#sec-axiom-of-choice}
 
 For the deepest results about partially ordered sets we need a new set-theoretic tool; we interrupt the development of the theory of order long enough to pick up that tool. 
 
