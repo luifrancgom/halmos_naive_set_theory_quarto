@@ -39,6 +39,7 @@ book:
     - chapter_19.qmd
     - chapter_20.qmd
     - chapter_21.qmd
+    - chapter_22.qmd
 
 format:
   html:
