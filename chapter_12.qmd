@@ -21,7 +21,7 @@ $$
 \mathit{if\ } S \subset \omega, \mathit{if\ } 0 \in S, \mathit{and\ if\ } n^{+} \in S \mathit{\ whenever\ } n \in S, \mathit{then\ } S = \omega.
 $${#eq-12-3}
 
-Property (@eq-12-3) is known as the **principle of mathematical induction.** `\index{induction}`{=latex} We shall now add to this list of properties of $\omega$ two others: 
+Property (@eq-12-3) is known as the **principle of mathematical induction.**`\index{induction}\index{mathematical induction}`{=latex} We shall now add to this list of properties of $\omega$ two others: 
 
 $$
 n^{+} \neq 0 \mathit{\ for\ all\ } n \in \omega,
