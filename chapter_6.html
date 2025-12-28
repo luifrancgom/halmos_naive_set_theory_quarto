@@ -335,7 +335,8 @@ window.Quarto = {
 <p>What does it mean to arrange the elements of a set <span class="math inline">\(A\)</span> in some order? Suppose, for instance, that the set <span class="math inline">\(A\)</span> is the quadruple <span class="math inline">\(\{a, b, c, d \}\)</span> of distinct elements, and suppose that we want to consider its elements in the order</p>
 <p><span class="math display">\[
 \mathit{c\ b\ d\ a}.
-\]</span> Even without a precise definition of what this means, we can do something set-theoretically intelligent with it. We can, namely, consider, for each particular spot in the ordering, the set of all those elements that occur at or before that spot; we obtain in this way the sets</p>
+\]</span></p>
+<p>Even without a precise definition of what this means, we can do something set-theoretically intelligent with it. We can, namely, consider, for each particular spot in the ordering, the set of all those elements that occur at or before that spot; we obtain in this way the sets</p>
 <p><span class="math display">\[
 \{ c \} \: \{ c, b \} \: \{ c, b, d \} \: \{ c, b, d, a \}.
 \]</span></p>
@@ -369,11 +370,13 @@ B = \{ b : \mathit{\ for\ some\ } a \: ((a,b) \in R) \}.
 <p>The charge of artificiality is true; but it is not too high a price to pay for conceptual economy. The concept of an ordered pair could have been introduced as an additional primitive, axiomatically endowed with just the right properties, no more and no less. In some theories this is done. The mathematician’s choice is between having to remember a few more axioms and having to forget a few accidental facts; the choice is pretty clearly a matter of taste. Similar choices occur frequently in mathematics; in this book, for instance, we shall encounter them again in connection with the definitions of numbers of various kinds.</p>
 <div id="exr-6-1" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.1</strong></span> If <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(X\)</span>, and <span class="math inline">\(Y\)</span> are sets, then</p>
-<p><span class="math display">\[\begin{align*}
-(i)   &amp; \: (A \cup B) \times X = ( A \times X ) \cup ( B \times X), \\
-(ii)  &amp; \: (A \cap B ) \times ( X \cap Y) = (A \times X) \cap ( B \times Y), \\
-(iii) &amp; \: (A - B ) \times X = (A \times X) - (B \times X).
-\end{align*}\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+(i)   &amp;\hspace{5pt} (A \cup B) \times X = ( A \times X ) \cup ( B \times X), \\
+(ii)  &amp;\hspace{5pt} (A \cap B ) \times ( X \cap Y) = (A \times X) \cap ( B \times Y), \\
+(iii) &amp;\hspace{5pt} (A - B ) \times X = (A \times X) - (B \times X).
+\end{aligned}
+\]</span></p>
 <p>If either <span class="math inline">\(A = \emptyset\)</span> or <span class="math inline">\(B = \emptyset\)</span>, then <span class="math inline">\(A \times B = \emptyset\)</span>, and conversely. If <span class="math inline">\(A \subset X\)</span> and <span class="math inline">\(B \subset Y\)</span>, then <span class="math inline">\(A \times B \subset X \times Y\)</span>, and (provided <span class="math inline">\(A \times B \neq \emptyset\)</span>) conversely.</p>
 </div>
 

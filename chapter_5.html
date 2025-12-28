@@ -337,14 +337,30 @@ window.Quarto = {
 A - B = \{ x \in A: x \notin B \}.
 \]</span></p>
 <p>Note that in this definition it is not necessary to assume that <span class="math inline">\(B \subset A\)</span>. In order to record the basic facts about complementation as simply as possible, we assume nevertheless (in this section only) that all the sets to be mentioned are subsets of one and the same set <span class="math inline">\(E\)</span> and that all complements (unless otherwise specified) are formed relative to that <span class="math inline">\(E\)</span>. In such situations (and they are quite common) it is easier to remember the underlying set <span class="math inline">\(E\)</span> than to keep writing it down, and this makes it possible to simplify the notation. An often used symbol for the temporarily absolute (as opposed to relative) complement of <span class="math inline">\(A\)</span> is <span class="math inline">\(A'\)</span>. In terms of this symbol the basic facts about complementation can be stated as follows:</p>
-<p><span class="math display">\[(A')' = A,\]</span> <span class="math display">\[\emptyset' = E, \: E' = \emptyset,\]</span> <span class="math display">\[A \cap A' = \emptyset, \: A \cup A' = E,\]</span> <span class="math display">\[A \subset B \mathit{\ if\ and\ only\ if\ } B' \subset A'.\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+(A')' &amp;= A, \\
+\emptyset ' &amp;= E, \quad E' = \emptyset, \\
+A \cap A' &amp;= \emptyset, \quad A \cup A' = E, \\
+A \subset B &amp;\mathit{\ if\ and\ only\ if\ } B' \subset A'.
+\end{aligned}
+\]</span></p>
 <p>The most important statements about complements are the so-called <em>De Morgan laws</em>:</p>
 <p><span class="math display">\[
 (A \cup B)' = A' \cap B', \: (A \cap B)' = A' \cup B'.
 \]</span></p>
 <p>(We shall see presently that the De Morgan laws hold for the unions and intersections of larger collections of sets than just pairs.) These facts about complementation imply that the theorems of set usually come in pairs. If in an inclusion equation involving unions, intersections, and complements of subsets of <span class="math inline">\(E\)</span> we replace each set by its complement, interchange unions and intersections, and reverse all inclusions, the result is another theorem. This fact is sometimes referred to as the <em>principle of duality</em> for sets.</p>
 <p>Here are some easy exercises on complementation.</p>
-<p><span class="math display">\[A - B = A \cap B'.\]</span> <span class="math display">\[A \subset B \mathit{\ if\ and\ only\ if\ } A - B = \emptyset.\]</span> <span class="math display">\[A - (A - B) = A \cap B.\]</span> <span class="math display">\[A \cap (B - C) = (A \cap B) - (A \cap C).\]</span> <span class="math display">\[A \cap B \subset (A \cap C) \cup (B \cap C').\]</span> <span class="math display">\[(A \cup C) \cap (B \cup C') \subset A \cup B.\]</span></p>
+<p><span class="math display">\[
+\begin{gathered}
+A - B = A \cap B', \\
+A \subset B \mathit{\ if\ and\ only\ if\ } A - B = \emptyset, \\
+A - (A - B) = A \cap B, \\
+A \cap (B - C) = (A \cap B) - (A \cap C), \\
+A \cap B \subset (A \cap C) \cup (B \cap C'), \\
+(A \cup C) \cap (B \cup C') \subset A \cup B.
+\end{gathered}
+\]</span></p>
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are sets, the <em>symmetric difference</em> (or <em>Boolean sum</em> of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the set <span class="math inline">\(A + B\)</span> defined by</p>
 <p><span class="math display">\[
 A + B = (A - B) \cup (B - A).
