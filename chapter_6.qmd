@@ -5,6 +5,7 @@ What does it mean to arrange the elements of a set $A$ in some order? Suppose, f
 $$
 \mathit{c\ b\ d\ a}.
 $$
+
 Even without a precise definition of what this means, we can do something set-theoretically intelligent with it. We can, namely, consider, for each particular spot in the ordering, the set of all those elements that occur at or before that spot; we obtain in this way the sets 
 
 $$
@@ -61,11 +62,13 @@ The charge of artificiality is true; but it is not too high a price to pay for c
 
 If $A$, $B$, $X$, and $Y$ are sets, then
 
-\begin{align*} 
-(i)   & \: (A \cup B) \times X = ( A \times X ) \cup ( B \times X), \\
-(ii)  & \: (A \cap B ) \times ( X \cap Y) = (A \times X) \cap ( B \times Y), \\
-(iii) & \: (A - B ) \times X = (A \times X) - (B \times X).
-\end{align*}
+$$
+\begin{aligned}
+(i)   &\hspace{5pt} (A \cup B) \times X = ( A \times X ) \cup ( B \times X), \\
+(ii)  &\hspace{5pt} (A \cap B ) \times ( X \cap Y) = (A \times X) \cap ( B \times Y), \\
+(iii) &\hspace{5pt} (A - B ) \times X = (A \times X) - (B \times X).
+\end{aligned}
+$$
 
 If either $A = \emptyset$ or $B = \emptyset$, then $A \times B = \emptyset$, and conversely. If $A \subset X$ and $B \subset Y$, then $A \times B \subset X \times Y$, and (provided $A \times B \neq \emptyset$) conversely. 
 

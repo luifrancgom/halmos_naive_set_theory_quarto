@@ -26,13 +26,15 @@ Now we can forget about the given partial order in $X$. In what follows we consi
 
 Let $f$ be a choice function for $X$, that is, $f$ is a function from the collection of all non-empty subsets of $X$ to $X$ such that $f(A) \in A$ for all $A$ in the domain of $f$. For each set $A$ in $\mathcal{X}$, let $\hat{A}$ be the set of all those elements $x$ of $X$ whose adjunction to $A$ produces a set in $\mathcal{X}$; in other words, $\hat{A} =\{ x \in X:A \cup \{ x \} \in \mathcal{X} \}$. Define a function $g$ from $\mathcal{X}$ to $\mathcal{X}$ as follows: if $\hat{A} - A \neq \emptyset$, then $g(A) = A \cup \{ f( \hat{A} - A) \}$; if $\hat{A} - A = \emptyset$, then $g(A) = A$. It follows from the definition of $\hat{A}$ that $\hat{A} - A = \emptyset$ if and only if $A$ is maximal. In these terms, therefore, what we must prove is that there exists in $\mathcal{X}$ a set $A$ such that $g(A) = A$. It turns out that the crucial property of $g$ is the fact that $g(A)$ (which always includes $A$) contains at most one more element than $A$.
 
-Now, to facilitate the exposition, we introduce a temporary definition. We shall say that a subcollection $\mathcal{J}$ of $\mathcal{X}$ is a *tower*`\index{tower}`{=latex} if 
+Now, to facilitate the exposition, we introduce a temporary definition. We shall say that a subcollection $\mathcal{J}$ of $\mathcal{X}$ is a *tower*`\index{tower}`{=latex} if
 
-\begin{align*}
-&(i) \: \emptyset \in \mathcal{J}, \\
-&(ii) \mathit{\ if\ } A \in \mathcal{J}, \mathit{\ then\ } g(A) \in \mathcal{J} ,\\
-&(iii) \mathit{\ if\ } \mathcal{C} \mathit{\ is\ a\ chain\ in\ } \mathcal{J}, \mathit{\ then\ } \bigcup_{A \in \mathcal{C}} A \in \mathcal{J}. 
-\end{align*}
+$$
+\begin{aligned}
+(i)   &\hspace{5pt} \emptyset \in \mathcal{J}, \\
+(ii)  &\hspace{5pt} \mathit{if\ } A \in \mathcal{J}, \mathit{\ then\ } g(A) \in \mathcal{J}, \\
+(iii) &\hspace{5pt} \mathit{if\ } \mathcal{C} \mathit{\ is\ a\ chain\ in\ } \mathcal{J}, \mathit{\ then\ } \bigcup_{A \in \mathcal{C}} A \in \mathcal{J}. 
+\end{aligned}
+$$
 
 Towers surely exist; the whole collection $\mathcal{X}$ is one. Since the intersection of a collection of towers is again a tower, it follows, in particular, that if $\mathcal{J}_{0}$ is the intersection of all towers, then $\mathcal{J}_{0}$ is the smallest tower. Our immediate purpose is to prove that the tower $\mathcal{J}_{0}$ is a chain. 
 

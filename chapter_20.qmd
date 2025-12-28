@@ -11,16 +11,12 @@ The next thing to note is that if two ordinal numbers are similar, then they are
 If $\alpha$ and $\beta$ are ordinal numbers, then, in particular, they are well ordered sets, and, consequently, either they are similar or else one of them is similar to an initial segment of the other. If, say, $\beta$ is similar to an initial segment of $\alpha$, then $\beta$ is similar to an element of $\alpha$. Since every element of $\alpha$ is an ordinal number, it follows that $\beta$ is an element of $\alpha$, or, in still other words, that $\alpha$ is a continuation of $\beta$. We know by now that if $\alpha$ and $\beta$ are distinct ordinal numbers, then the statements
 
 $$
-\beta \in \alpha,
-$$
-
-$$\beta \subset \alpha,
-$$
-
-$$
+\begin{gathered}
+\beta \in \alpha, \\
+\beta \subset \alpha, \\
 \alpha \mathit{\ is\ a\ continuation\ of\ } \beta,
+\end{gathered}
 $$
-
 
 are all equivalent to one another; if they hold, we may write
 

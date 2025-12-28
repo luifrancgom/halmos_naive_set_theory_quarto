@@ -18,11 +18,13 @@ These considerations extend without difficulty to the infinite case. If $\{ \alp
 
 Some of the properties of addition for ordinal numbers are good and others are bad. On the good side of the ledger are the identities
 
-\begin{align*}
+$$
+\begin{aligned}
 \alpha + 0 &= \alpha, \\
 0 + \alpha &= \alpha, \\
-\alpha + 1 &= \alpha^{+}, \\
-\end{align*}
+\alpha + 1 &= \alpha^{+},
+\end{aligned}
+$$
 
 and the associative law
 
@@ -40,12 +42,14 @@ If $\alpha$ and $\beta$ are ordinal numbers, let $A$ and $B$ be well ordered set
 
 Like addition, multiplication has its good and bad properties. Among the good ones are the identities
 
-\begin{align*}
+$$
+\begin{aligned}
 \alpha 0 &= 0, \\
 0 \alpha &= 0, \\
 \alpha 1 &= \alpha, \\
-1 \alpha &= \alpha, \\
-\end{align*}
+1 \alpha &= \alpha,
+\end{aligned}
+$$
 
 the associative law
 
@@ -65,12 +69,14 @@ The commutative law for multiplication fails, and so do many of its consequences
 
 Just as repeated addition led to the definition of ordinal products, repeated multiplication could be used to define ordinal exponents. Alternatively, exponentiation can be approached via transfinite recursion. The precise details are part of an extensive and highly specialized theory of ordinal numbers. At this point we shall be content with hinting at the definition and mentioning its easiest consequences. To define $\alpha^{\beta}$ (where $\alpha$ and $\beta$ are ordinal numbers), use definition by transfinite induction (on $\beta$). Begin by writing $\alpha^{0} = 1$ and $\alpha^{\beta + 1} = \alpha^{\beta} \alpha$; if $\beta$ is a limit number, define $\alpha^{\beta}$ as the supremum of the numbers of the form $\alpha^{\gamma}$, where $\gamma < \beta$. If this sketch of a definition is formulated with care, it follows that
 
-\begin{align*}
-0^{\alpha} &= 0\ (\alpha \ge 1), \\
+$$
+\begin{aligned}
+0^{\alpha} &= 0 \quad (\alpha \ge 1), \\
 1^{\gamma} &= 1, \\
 \alpha^{\beta + \gamma} &= \alpha^{\beta} \alpha^{\gamma}, \\
 \alpha^{\beta \gamma} &= (\alpha^{\beta})^{\gamma}.
-\end{align*}
+\end{aligned}
+$$
 
 Not all the familiar laws of exponents hold; thus, for instance, $( \alpha \beta)^{\gamma}$ is in general different from $\alpha^{\gamma} \beta^{\gamma}$. Example: $(2 \cdot 2)^{\omega} = 4^{\omega} = \omega$, but $2^{\omega} \cdot 2^{\omega} = \omega \cdot \omega =  \omega^{2}$.
 

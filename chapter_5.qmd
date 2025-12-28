@@ -8,10 +8,15 @@ $$
 
 Note that in this definition it is not necessary to assume that $B \subset A$. In order to record the basic facts about complementation as simply as possible, we assume nevertheless (in this section only) that all the sets to be mentioned are subsets of one and the same set $E$ and that all complements (unless otherwise specified) are formed relative to that $E$. In such situations (and they are quite common) it is easier to remember the underlying set $E$ than to keep writing it down, and this makes it possible to simplify the notation. An often used symbol for the temporarily absolute (as opposed to relative) complement of $A$ is $A'$. In terms of this symbol the basic facts about complementation can be stated as follows:
 
-$$(A')' = A,$$
-$$\emptyset' = E, \: E' = \emptyset,$$
-$$A \cap A' = \emptyset, \: A \cup A' = E,$$
-$$A \subset B \mathit{\ if\ and\ only\ if\ } B' \subset A'.$$
+
+$$
+\begin{aligned}
+(A')' &= A, \\
+\emptyset ' &= E, \quad E' = \emptyset, \\
+A \cap A' &= \emptyset, \quad A \cup A' = E, \\
+A \subset B &\mathit{\ if\ and\ only\ if\ } B' \subset A'.
+\end{aligned}
+$$
 
 The most important statements about complements are the so-called *De Morgan laws*`\index{De Morgan}`{=latex}:
 
@@ -21,14 +26,18 @@ $$
 
 (We shall see presently that the De Morgan laws hold for the unions and intersections of larger collections of sets than just pairs.) These facts about complementation imply that the theorems of set usually come in pairs. If in an inclusion equation involving unions, intersections, and complements of subsets of $E$ we replace each set by its complement, interchange unions and intersections, and reverse all  inclusions, the result is another theorem. This fact is sometimes referred to as the *principle of duality*`\index{duality}`{=latex} for sets.
 
-Here are some easy exercises on complementation. 
+Here are some easy exercises on complementation.
 
-$$A - B = A \cap B'.$$
-$$A \subset B \mathit{\ if\ and\ only\ if\ } A - B = \emptyset.$$
-$$A - (A - B) = A \cap B.$$
-$$A \cap (B - C) = (A \cap B) - (A \cap C).$$
-$$A \cap B \subset (A \cap C) \cup (B \cap C').$$
-$$(A \cup C) \cap (B \cup C') \subset A \cup B.$$
+$$
+\begin{gathered}
+A - B = A \cap B', \\
+A \subset B \mathit{\ if\ and\ only\ if\ } A - B = \emptyset, \\
+A - (A - B) = A \cap B, \\
+A \cap (B - C) = (A \cap B) - (A \cap C), \\
+A \cap B \subset (A \cap C) \cup (B \cap C'), \\
+(A \cup C) \cap (B \cup C') \subset A \cup B.
+\end{gathered}
+$$
 
 If $A$ and $B$ are sets, the *symmetric difference*`\index{symmetric difference}`{=latex} (or *Boolean sum*`\index{Boolean sum})`{=latex} of $A$ and $B$ is the set $A + B$ defined by 
 
