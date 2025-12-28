@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Unions and Intersections – Naive Set Theory</title>
+<title>25&nbsp; Cardinal Numbers – Naive Set Theory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter_5.html" rel="next">
-<link href="./chapter_3.html" rel="prev">
+<link href="./chapter_24.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -123,7 +122,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Unions and Intersections</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_25.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cardinal Numbers</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -184,7 +183,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_4.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapter_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Unions and Intersections</span></span></a>
   </div>
 </li>
@@ -310,7 +309,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_25.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter_25.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cardinal Numbers</span></span></a>
   </div>
 </li>
@@ -327,7 +326,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Unions and Intersections</span></h1>
+<h1 class="title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cardinal Numbers</span></h1>
 </div>
 
 
@@ -344,142 +343,35 @@ window.Quarto = {
 </header>
 
 
-<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are sets, it is sometimes natural to wish to unite their elements into one comprehensive set. One way of describing such a comprehensive set is to require it to contain all the elements that belong to at least one of the two members of the pair <span class="math inline">\(\{ A, B \}\)</span>. This formulation suggests a sweeping generalization of itself; surely a similar construction should apply to arbitrary collections of sets and not just to pairs of them. What is wanted, in other words, is the following principle of set construction.</p>
-<div id="cnj-unions" class="theorem conjecture">
-<p><span class="theorem-title"><strong>Axiom 4.1 (Axiom of unions)</strong></span> For every collection of sets there exists a set that contains all the elements that belong to at least one set of the given collection.</p>
+<p>We know quite a bit about cardinal numbers by now, but we still do not know what they are. Speaking vaguely, we may say that the cardinal number of a set is the property that the set has in common with all sets equivalent to it. We may try to make this precise by saying that the cardinal number of <span class="math inline">\(X\)</span> is equal to the set of all sets equivalent to <span class="math inline">\(X\)</span>, but the attempt will fail; there is no set as large as that. The next thing to try, suggested by analogy with our approach to the definition of natural numbers, is to define the cardinal number of a set <span class="math inline">\(X\)</span> as some particular carefully selected set equivalent to <span class="math inline">\(X\)</span>. This is what we proceed to do.</p>
+<p>For each set <span class="math inline">\(X\)</span> there are too many other sets equivalent to <span class="math inline">\(X\)</span>; our first problem is to narrow the field. Since we know that every set is equivalent to some ordinal number, it is not unnatural to look for the typical sets, the representative sets, among ordinal numbers.</p>
+<p>To be sure, a set can be equivalent to many ordinal numbers. A hopeful sign, however, is the fact that, for each set <span class="math inline">\(X\)</span>, the ordinal numbers equivalent to <span class="math inline">\(X\)</span> constitute a set. To prove this, observe first that it is easy to produce an ordinal number that is surely greater, strictly greater, than all the ordinal numbers equivalent to <span class="math inline">\(X\)</span>. Suppose in fact that <span class="math inline">\(\gamma\)</span> is an ordinal number equivalent to the power set <span class="math inline">\(\mathcal{P}(X)\)</span>. If <span class="math inline">\(\alpha\)</span> is an ordinal number equivalent to <span class="math inline">\(X\)</span>, then the set <span class="math inline">\(\alpha\)</span> is strictly dominated by the set <span class="math inline">\(\gamma\)</span> (i.e., <span class="math inline">\(\text{card } \alpha &lt; \text{card } \gamma\)</span>). It follows that we cannot have <span class="math inline">\(\gamma \le \alpha\)</span>, and, consequently, we must have <span class="math inline">\(\alpha &lt; \gamma\)</span>. Since, for ordinal numbers, <span class="math inline">\(\alpha &lt; \gamma\)</span> means the same thing as <span class="math inline">\(\alpha \in \gamma\)</span>, we have found a set, namely <span class="math inline">\(\gamma\)</span>, that contains every ordinal number equivalent to <span class="math inline">\(X\)</span>, and this implies that the ordinal numbers equivalent to <span class="math inline">\(X\)</span> do constitute a set.</p>
+<p>Which one among the ordinal numbers equivalent to <span class="math inline">\(X\)</span> deserves to be singled out and called the cardinal number of <span class="math inline">\(X\)</span>? The question has only one natural answer. Every set of ordinal numbers is well ordered; the least element of a well ordered set is the only one thet seems to clamor for special attention.</p>
+<p>We are now prepared for the definition: a <em>cardinal number</em> is an ordinal number <span class="math inline">\(\alpha\)</span> such that if <span class="math inline">\(\beta\)</span> is an ordinal number equivalent to <span class="math inline">\(\alpha\)</span> (i.e., <span class="math inline">\(\text{card } \alpha = \text{card } \beta\)</span>), then <span class="math inline">\(\alpha \le \beta\)</span>. The ordinal numbers with this property have also been called <em>initial numbers</em>. If <span class="math inline">\(X\)</span> is a set, then <span class="math inline">\(\text{card } X\)</span>, the cardinal number of <span class="math inline">\(X\)</span> (also known as the <em>power</em> of <span class="math inline">\(X\)</span>), is the least ordinal number equivalent to <span class="math inline">\(X\)</span>.</p>
+<div id="exr-25-1" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 25.1</strong></span> Prove that each infinite cardinal number is a limit number.</p>
 </div>
-<p>Here it is again: for every collection <span class="math inline">\(\mathcal{C}\)</span> there exists a set <span class="math inline">\(U\)</span> such that if <span class="math inline">\(x \in X\)</span> for some <span class="math inline">\(X\)</span> in <span class="math inline">\(\mathcal{C}\)</span>, then <span class="math inline">\(x \in U\)</span>. (Note that “at least one” is the same as “some.”)</p>
-<p>The comprehensive set <span class="math inline">\(U\)</span> described above may be too comprehensive; it may contain elements that belong to none of the sets <span class="math inline">\(X\)</span> in the collection <span class="math inline">\(\mathcal{C}\)</span>. This is easy to remedy; just apply the axiom of specification to form the set</p>
+<p>Since each set is equivalent to its cardinal number, it follows that if <span class="math inline">\(\text{card } X = \text{card } Y\)</span>, then <span class="math inline">\(X \sim Y\)</span>. If, conversely, <span class="math inline">\(X \sim Y\)</span>, then <span class="math inline">\(\text{card } X \sim \text{card } Y\)</span>. Since <span class="math inline">\(\text{card } X\)</span> is the least ordinal number equivalent to <span class="math inline">\(X\)</span>, it follows that <span class="math inline">\(\text{card } X \le \text{card } Y\)</span>, and, since the situation is symmetric in <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, we also have <span class="math inline">\(\text{card } Y \le \text{card } X\)</span>. In other words <span class="math inline">\(\text{card } X = \text{card }Y\)</span> if and only if <span class="math inline">\(X \sim Y\)</span>; this was one of the conditions on cardinal numbers that we needed in the development of cardinal arithmetic.</p>
+<p>A finite ordinal number (i.e., a natural number) is not equivalent to any finite ordinal number distinct from itself. It follows that if <span class="math inline">\(X\)</span> is finite, then the set of ordinal numbers equivalent to <span class="math inline">\(X\)</span> is a singleton, and, consequently, the cardinal number of <span class="math inline">\(X\)</span> is the same as the ordinal number of <span class="math inline">\(X\)</span>. Both cardinal numbers and ordinal numbers are generalizations of the natural numbers; in the familiar finite cases both the generalizations coincide with the special case that gave rise to them in the first place. As an almost trivial application of these remarks, we can now calculate the cardinal number of a power set <span class="math inline">\(\mathcal{P}(A)\)</span>: if <span class="math inline">\(\text{card } A = a\)</span>, then <span class="math inline">\(\text{card } \mathcal{P}(A) = 2^{\alpha}\)</span>. (Note that the result, though simple, could not have been stated before this; till now we did not know that <span class="math inline">\(2\)</span> is a cardinal number.) The proof is immediate from the fact that <span class="math inline">\(\mathcal{P}(A)\)</span> is equivalent to <span class="math inline">\(2^{A}\)</span>.</p>
+<p>If <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are ordinal numbers, we know what it means to say that <span class="math inline">\(\alpha &lt; \beta\)</span> or <span class="math inline">\(\alpha \le \beta\)</span>. It follows that cardinal numbers come to us automatically equipped with an order. The order satisfies the conditions we borrowed for our discussion of cardinal arithmetic. Indeed: if <span class="math inline">\(\text{card } X &lt; \text{card } Y\)</span>, then <span class="math inline">\(\text{card } X\)</span> is a subset of <span class="math inline">\(\text{card } Y\)</span>, and it follows that <span class="math inline">\(X \precsim Y\)</span>. If we had <span class="math inline">\(X \sim Y\)</span>, then, as we have already seen, we should have <span class="math inline">\(\text{card } X = \text{card } Y\)</span>; it follows that we must have <span class="math inline">\(X \prec Y\)</span>. If, finally, <span class="math inline">\(X \prec Y\)</span>, then it is impossible that <span class="math inline">\(\text{card } Y \le \text{card } X\)</span> (for similarity implies equivalence), and hence <span class="math inline">\(\text{card } X &lt; \text{card } Y\)</span>.</p>
+<p>As an application of these considerations we mention the inequality</p>
 <p><span class="math display">\[
-\{ x \in U: x \in X \mathit{\ for\ some\ } X \mathit{\ in\ } \mathcal{C} \}.
+a &lt; 2^{a},
 \]</span></p>
-<p>(The condition here is a translation into idiomatic usage of the mathematically more acceptable “<em>for some</em> <span class="math inline">\(X\ (x \in X \mathit{\ and\ } X \in \mathcal{C})\)</span>.”) It follows that, for every <span class="math inline">\(x\)</span>, a necessary and sufficient condition that <span class="math inline">\(x\)</span> belong to this set is that <span class="math inline">\(x\)</span> belong to <span class="math inline">\(X\)</span> for some <span class="math inline">\(X\)</span> in <span class="math inline">\(\mathcal{C}\)</span>. If we change notation and call the new set <span class="math inline">\(U\)</span> again, then</p>
-<p><span class="math display">\[
-U = \{ x: x \in X \mathit{\ for\ some\ } X \mathit{\ in\ }  \mathcal{C} \}.
-\]</span></p>
-<p>This set <span class="math inline">\(U\)</span> is called the <em>union</em> of the collection <span class="math inline">\(\mathcal{C}\)</span> of sets; note that the axiom of extension guarantees its uniqueness. The simplest symbol for <span class="math inline">\(U\)</span> that is in use at all is not very popular in mathematical circles; it is</p>
-<p><span class="math display">\[
-\bigcup \mathcal{C}.
-\]</span></p>
-<p>Most mathematicians prefer something like</p>
-<p><span class="math display">\[
-\bigcup \{ X: X \in \mathcal{C} \}
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-\bigcup_{X \in \mathcal{C}} X.
-\]</span></p>
-<p>Further alternatives are available in certain important special cases; they will be described in due course.</p>
-<p>For the time being we restrict our study of the theory of unions to the simplest facts only. The simplest fact of all is that</p>
-<p><span class="math display">\[
-\bigcup \{ X: X \in \emptyset \} = \emptyset,
-\]</span></p>
-<p>and the next simplest fact is that</p>
-<p><span class="math display">\[
-\bigcup \{ X: X \in \{ A \} \} = A.
-\]</span></p>
-<p>In the brutally simple notation mentioned above these facts are expressed by</p>
-<p><span class="math display">\[
-\bigcup \emptyset = \emptyset
-\]</span></p>
-<p>and</p>
-<p><span class="math display">\[
-\bigcup \{ A \} = A.
-\]</span></p>
-<p>The proofs are immediate from the definitions.</p>
-<p>There is a little more substance in the union of pairs of sets (which is what started this whole discussion anyway). In that case special notation is used:</p>
-<p><span class="math display">\[
-\bigcup \{ X: X \in \{A, B \} \} = A \cup B.
-\]</span></p>
-<p>The general definition of unions implies in the special case that <span class="math inline">\(x \in A \cup B\)</span> if and only if <span class="math inline">\(x\)</span> belongs to either <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both; it follows that</p>
-<p><span class="math display">\[
-A \cup B = \{x: x \in A \mathit{\ or\ } x \in B \}.
-\]</span></p>
-<p>Here are some easily proved facts about the unions of pairs:</p>
-<p><span class="math display">\[
-A \cup \emptyset = A,
-\]</span> <span class="math display">\[
-A \cup B =  B \cup A \ (commutatitivity),
-\]</span> <span class="math display">\[
-A \cup (B \cup C) = (A \cup B) \cup C \ (associativity),
-\]</span> <span class="math display">\[
-A \cup A = A \ (idempotence),
-\]</span> <span class="math display">\[
-A \subset B \mathit{\ if\ and\ only\ if\ } A \cup B = B.
-\]</span></p>
-<p>Every student of mathematics should prove these things for himself at least once in his life. The proofs are based on the corresponding elementary properties of the logical operator <em>or</em>.</p>
-<p>An equally simple but quite suggestive fact is that</p>
-<p><span class="math display">\[
-\{ a \} \cup \{ b \} = \{ a, b \}.
-\]</span></p>
-<p>What this suggests is the way to generalize pairs. Specifically, we write</p>
-<p><span class="math display">\[
-\{ a, b, c \} = \{ a \} \cup \{ b \} \cup \{ c \}.
-\]</span></p>
-<p>The equation defines its left side. The right side should by rights have at least one pair of parentheses in it, but, in view of the associative law, their omission can lead to no misunderstanding. Since it is easy to prove that</p>
-<p><span class="math display">\[
-\{ a, b, c \} = \{ x: x = a \ or \ x = b \: or \: x = c \},
-\]</span></p>
-<p>we know now that for every three sets there exists a set that contains them and nothing else; it is natural to call that uniquely determined set the (<em>unordered</em>) <em>triple</em> formed by them. The extension of the notation and terminology thus introduced to more terms (<em>quadruples</em>, etc.) is obvious.</p>
-<p>The formation of unions has many points of similarity with another set-theoretic operation. If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are sets, the <em>intersection</em> of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the set</p>
-<p><span class="math display">\[
-A \cap B
-\]</span></p>
-<p>defined by</p>
-<p><span class="math display">\[
-A \cap B = \{ x \in A: x \in B \}.
-\]</span></p>
-<p>The definition is symmetric in <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> even if it looks otherwise; we have</p>
-<p><span class="math display">\[
-A \cap B = \{ x \in B: x \in A \},
-\]</span></p>
-<p>and, in fact, since <span class="math inline">\(x \in A \cap B\)</span> if and only if <span class="math inline">\(x\)</span> belongs to both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, it follows that</p>
-<p><span class="math display">\[
-A \cap B = \{x: x \in A \mathit{\ and\ } x \in B \}.
-\]</span></p>
-<p>The basic facts about intersections, as well as their proofs, are similar to the basic facts about unions:</p>
-<p><span class="math display">\[
-A \cap \emptyset = \emptyset,
-\]</span> <span class="math display">\[
-A \cap B =  B \cap A,
-\]</span> <span class="math display">\[
-A \cap (B \cap C) = (A \cap B) \cap C,
-\]</span> <span class="math display">\[
-A \cap A = A,
-\]</span> <span class="math display">\[
-A \subset B \mathit{\ if\ and\ only\ if\ } A \cap B = A.
-\]</span></p>
-<p>Pairs of sets with an empty intersection occur frequently enough to justify the use of a special word: if <span class="math inline">\(A \cap B =  \emptyset\)</span>, the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are called <em>disjoint</em>. The same word is sometimes applied to a collection of sets to indicate that any two distinct sets of the collection are disjoint; alternatively we may speak in such a situation of a <em>pairwise disjoint</em> collection.</p>
-<p>Two useful facts about unions and intersections involve both the operations at the same time:</p>
-<p><span class="math display">\[
-A \cap (B \cup C) = (A \cap B) \cup (A \cap C),
-\]</span> <span class="math display">\[
-A \cup (B \cap C) = (A \cup B) \cap (A \cup C).
-\]</span></p>
-<p>These identities are called the <em>distributive laws</em>. By way of a sample of a set-theoretic proof, we prove the second one. If <span class="math inline">\(x\)</span> belongs to the left side, then <span class="math inline">\(x\)</span> belongs either to <span class="math inline">\(A\)</span> or to both <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>; if <span class="math inline">\(x\)</span> is in <span class="math inline">\(A\)</span>, then <span class="math inline">\(x\)</span> is in both <span class="math inline">\(A \cup B\)</span> and <span class="math inline">\(A \cup C\)</span>, and if <span class="math inline">\(x\)</span> is in both <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, then, again, <span class="math inline">\(x\)</span> is in both <span class="math inline">\(A \cup B\)</span> and <span class="math inline">\(A \cup C\)</span>; it follows that, in any case, <span class="math inline">\(x\)</span> belongs to the right side. This proves that the right side includes the left. To prove the reverse inclusion, just observe that if <span class="math inline">\(x\)</span> belongs to both <span class="math inline">\(A \cup B\)</span> and <span class="math inline">\(A \cup C\)</span>, then <span class="math inline">\(x\)</span> belongs either to <span class="math inline">\(A\)</span> or to both <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>.</p>
-<p>The formation of the intersection of two sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, or, we might as well say, the formation of the intersection of a pair <span class="math inline">\(\{ A, B \}\)</span> of sets, is a special case of a much more general operation. (This is another respect in which the theory of intersections imitates that of unions.) The existence of the general operation of intersection depends on the fact that for each non-empty collection of sets there exists a set that contains exactly those elements that belong to every set of the given collection. In other words: for each collection <span class="math inline">\(\mathcal{C}\)</span>, other than <span class="math inline">\(\emptyset\)</span>, there exists a set <span class="math inline">\(V\)</span> such that <span class="math inline">\(x \in V\)</span> if and only if <span class="math inline">\(x \in X\)</span> for every <span class="math inline">\(X\)</span> in <span class="math inline">\(\mathcal{C}\)</span>. To prove this assertion, let <span class="math inline">\(A\)</span> be any particular set in <span class="math inline">\(\mathcal{C}\)</span> (this step is justified by the fact that <span class="math inline">\(\mathcal{C} \neq \emptyset\)</span>) and write</p>
-<p><span class="math display">\[
-V = \{ x \in A: x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
-\]</span></p>
-<p>(The condition means “<em>for all</em> <span class="math inline">\(X\)</span> (<em>if</em> <span class="math inline">\(X \in \mathcal{C}\)</span>, <em>then</em> <span class="math inline">\(x \in X\)</span>).”) The dependence of <span class="math inline">\(V\)</span> on the arbitrary choice of <span class="math inline">\(A\)</span> is illusory; in fact</p>
-<p><span class="math display">\[
-V = \{ x : x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
-\]</span></p>
-<p>The set <span class="math inline">\(V\)</span> is called the <em>intersection</em> of the collection <span class="math inline">\(\mathcal{C}\)</span> of sets; the axiom of extension guarantees its uniqueness. The customary notation is similar the one for unions: instead of the unobjectionable but unpopular</p>
-<p><span class="math display">\[
-\bigcap \mathcal{C},
-\]</span></p>
-<p>the set <span class="math inline">\(V\)</span> is usually denoted by</p>
-<p><span class="math display">\[
-\bigcap \{ X : X \in \mathcal{C} \}
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-\bigcap_{X \in \mathcal{C}} X.
-\]</span></p>
-<div id="exr-4-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Exercise 4.1</strong></span> A necessary and sufficient condition that <span class="math inline">\((A \cap B) \cup C = A \cap (B \cup C)\)</span> is that <span class="math inline">\(C \subset A\)</span>. Observe that the condition has nothing to do with the set <span class="math inline">\(B\)</span>.</p>
+<p>valid for all cardinal numbers <span class="math inline">\(a\)</span>. Proof: if <span class="math inline">\(A\)</span> is a set with <span class="math inline">\(\text{card } A = a\)</span>, then <span class="math inline">\(A \prec \mathcal{P}(A)\)</span>, hence <span class="math inline">\(\text{card } A &lt; \text{card } \mathcal{P}(A)\)</span>, and therefore <span class="math inline">\(a &lt; 2^{a}\)</span>.</p>
+<div id="exr-25-2" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 25.2</strong></span> If <span class="math inline">\(\text{card } A = a\)</span>, what is the cardinal number of the set of all one-to-one mappings of <span class="math inline">\(A\)</span> onto itself? What is the cardinal number of the set of all countably infinite subsets of <span class="math inline">\(A\)</span>?</p>
 </div>
+<p>The facts about the ordering of ordinal numbers are at the same time facts about the ordering of cardinal numbers. Thus, for instance, we know that any two cardinal numbers are comparable (always either <span class="math inline">\(a &lt; b\)</span>, or <span class="math inline">\(a = b\)</span>, or <span class="math inline">\(b &lt; a\)</span>), and that, in fact, every set of cardinal numbers is well ordered. We know also that every set of cardinal numbers has an upper bound (in fact, a supremum), and that, moreover, for every set of cardinal numbers, there is a cardinal number strictly greater than any of them. This implies of course that there is no largest cardinal number, or, equivalently, that there is no set that consists exactly of all the cardinal numbers. The contradiction, based on the assumption that there is such a set, is known as <em>Cantor’s paradox</em>.</p>
+<p>The fact that cardinal numbers are special ordinal numbers simplifies some aspects of the theory, but, at the same time, it introduces the possibility of some confusion that it is essential to avoid. One major source of difficulty is the notation for the arithmetic operations. If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are cardinal numbers, then they are also ordinal numbers, and, consequently, the sum <span class="math inline">\(a + b\)</span> has two possible meanings. The cardinal sum of two cardinal numbers is in general not the same as their ordinal sum. All this sounds worse than it is; in practice it is easy to avoid confusion. The context, the use of special symbols for cardinal numbers, and an occasional explicit warning can make the discussion flow quite smoothly.</p>
+<div id="exr-25-3" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 25.3</strong></span> Prove that if <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are ordinal numbers, then <span class="math inline">\(\text{card} (\alpha + \beta) = \text{card } \alpha + \text{card} \beta\)</span> and <span class="math inline">\(\text{card } (\alpha \beta) = (\text{card } \alpha)(\text{card } \beta)\)</span>. Use the ordinal interpretation of the operations on the left side and the cardinal interpretation on the right.</p>
+</div>
+<p>One of the special symbols for cardinal numbers that is used very frequently is the first letter <span class="math inline">\((\aleph, \text{aleph})\)</span> of the Hebrew alphabet. Thus in particular the smallest transfinite ordinal number, i.e., <span class="math inline">\(\omega\)</span>, is a cardinal number, and, as such, it is always denoted by <span class="math inline">\(\aleph_{0}\)</span>.</p>
+<p>Every one of the ordinal numbers that we have explicitly named so far is countable. In many of the applications of set theory an important role is played by the smallest uncountable ordinal number, frequently denoted by <span class="math inline">\(\Omega\)</span>. The most important property of <span class="math inline">\(\omega\)</span> is that it is an infinite well ordered set each of whose initial segments is finite; correspondingly, the most important property of <span class="math inline">\(\Omega\)</span> is that it is an uncountably infinite well ordered set each of whose initial segments is countable.</p>
+<p>The least uncountable ordinal number <span class="math inline">\(\Omega\)</span> clearly satisfies the defining condition of a cardinal number; in its cardinal role it is always denoted by <span class="math inline">\(\aleph_{1}\)</span>. Equivelently, <span class="math inline">\(\aleph_{1}\)</span> may be characterized as the least cardinal number strictly greater than <span class="math inline">\(\aleph_{0}\)</span>, or, in other words, the immediate successor of <span class="math inline">\(\aleph_{0}\)</span> in the ordering of cardinal numbers.</p>
+<p>The arithmetic relation between <span class="math inline">\(\aleph_{0}\)</span> and <span class="math inline">\(\aleph_{1}\)</span> is the subject of a famous old problem about cardinal numbers. How do we get from <span class="math inline">\(\aleph_{0}\)</span> to <span class="math inline">\(\aleph_{1}\)</span> by arithmetic operations? We know by now that the most elementary steps, involving sums and products, just lead from <span class="math inline">\(\aleph_{0}\)</span> back to <span class="math inline">\(\aleph_{0}\)</span> again. The simplest thing we know to do that starts with <span class="math inline">\(\aleph_{0}\)</span> and ends up with something larger is to form <span class="math inline">\(2^{\aleph_{0}}\)</span>. We know therefore that <span class="math inline">\(\aleph_{1} \le 2^{\aleph_{0}}\)</span>. Is the inequality strict? Is there an uncountable cardinal number strictly less than <span class="math inline">\(2^{\aleph_{0}}\)</span>? The celebrated <em>continuum hypothesis</em> asserts, as a guess, that the answer is no, or, in other words, that <span class="math inline">\(\aleph_{1} = 2^{\aleph_{0}}\)</span>. All that is known for sure is that the continuum hypothesis is consistent with the axioms of set theory.</p>
+<p>For each infinite cardinal number <span class="math inline">\(a\)</span>, consider the set <span class="math inline">\(c(a)\)</span> of all infinite cardinal numbers that are strictly less than <span class="math inline">\(a\)</span>. If <span class="math inline">\(a = \aleph_{0}\)</span>, then <span class="math inline">\(c(a) = \emptyset\)</span>; if <span class="math inline">\(a = \aleph_{1}\)</span>, then <span class="math inline">\(c(a) = \{ \aleph_{0} \}\)</span>. Since <span class="math inline">\(c(a)\)</span> is a well ordered set, it has an ordinal number, say <span class="math inline">\(\alpha\)</span>. The connection between <span class="math inline">\(a\)</span> and <span class="math inline">\(\alpha\)</span> is usually expressed by writing <span class="math inline">\(a = \aleph_{\alpha}\)</span>. An equivalent definition of the cardinal numbers <span class="math inline">\(\aleph_{\alpha}\)</span> proceeds by transfinite induction; according to that approach <span class="math inline">\(\aleph_{\alpha}\)</span> (for <span class="math inline">\(\alpha &gt; 0\)</span>) is the smallest cardinal number that is strictly greater than all the <span class="math inline">\(\aleph_{\beta}\)</span>’s with <span class="math inline">\(\beta &lt; \alpha\)</span>. The <em>generalized continuum hypothesis</em> is the conjecture that <span class="math inline">\(\aleph_{\alpha + 1} = 2^{\aleph_{\alpha}}\)</span> for each ordinal number <span class="math inline">\(\alpha\)</span>.</p>
 
 
 
@@ -886,14 +778,11 @@ V = \{ x : x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_3.html" class="pagination-link" aria-label="Unordered Pairs">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Unordered Pairs</span></span>
+      <a href="./chapter_24.html" class="pagination-link" aria-label="Cardinal Arithmetic">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Cardinal Arithmetic</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_5.html" class="pagination-link" aria-label="Complements and Powers">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Complements and Powers</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -901,4 +790,4 @@ V = \{ x : x \in X \mathit{\ for\ every\ } X \mathit{\ in\ } \mathcal{C} \}.
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/edit/main/chapter_4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/blob/main/chapter_4.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/edit/main/chapter_25.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/blob/main/chapter_25.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
