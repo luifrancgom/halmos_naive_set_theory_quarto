@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>21&nbsp; Ordinal Arithmetic – Naive Set Theory</title>
+<title>References – Naive Set Theory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter_22.html" rel="next">
-<link href="./chapter_20.html" rel="prev">
+<link href="./chapter_25.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -82,35 +100,6 @@ ul.task-list li input[type="checkbox"] {
   };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -123,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_21.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Ordinal Arithmetic</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -286,7 +275,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_21.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapter_21.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Ordinal Arithmetic</span></span></a>
   </div>
 </li>
@@ -316,7 +305,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="./references.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -333,7 +322,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Ordinal Arithmetic</span></h1>
+<h1 class="title">References</h1>
 </div>
 
 
@@ -350,60 +339,12 @@ window.Quarto = {
 </header>
 
 
-<p>For natural numbers we used the recursion theorem to define the arithmetic operations, and, subsequently, we proved that those operations are related to the operations of set theory in various desirable ways. Thus, for instance, we know that the number of elements in the union of two disjoint finite sets <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> is equal to <span class="math inline">\(\# (E) + \# (F)\)</span>. We observe now that this fact could have been used to define addition. If <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are natural numbers, we could have defined their sum by finding disjoint sets <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span>, with <span class="math inline">\(\# (E) = m\)</span> and <span class="math inline">\(\# (F) = n\)</span>, and writing <span class="math inline">\(m + n = \# (E \cup F)\)</span>.</p>
-<p>Corresponding to what was done and to what could have been done for natural numbers, there are two standard approaches to ordinal arithmetic. Partly for the sake of variety, and partly because in this context recursion seems less natural, we shall emphasize the set-theoretic approach instead of the recursive one.</p>
-<p>We begin by pointing out that there is a more or less obvious way of putting two well ordered sets together to form a new well ordered set. Informally speaking, the idea is to write down one of them and then to follow it by the other. If we try to say this rigorously, we immediately encounter the difficulty that the two sets may not be disjoint. When are we supposed to write down an element that is common to the two sets? The way out of the difficulty is to make the sets disjoint. This can be done by painting their elements different colors. In more mathematical language, replace the elements of the sets by those same elements taken together with some distinguishing object, using two different objects for the two sets. In completely mathematical language: if <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> are arbitrary sets, let <span class="math inline">\(\hat{E}\)</span> be the set of all ordered pairs <span class="math inline">\((x, 0)\)</span> with <span class="math inline">\(x\)</span> in <span class="math inline">\(E\)</span>, and let <span class="math inline">\(\hat{F}\)</span> be the set of all ordered pairs <span class="math inline">\((x,1)\)</span> with <span class="math inline">\(x\)</span> in <span class="math inline">\(F\)</span>. The sets <span class="math inline">\(\hat{E}\)</span> and <span class="math inline">\(\hat{F}\)</span> are clearly disjoint. There is an obvious one-to-one correspondence between <span class="math inline">\(E\)</span> and <span class="math inline">\(\hat{E}\)</span> <span class="math inline">\((x \rightarrow (x,0))\)</span> and another one between <span class="math inline">\(F\)</span> and <span class="math inline">\(\hat{F}\)</span> <span class="math inline">\((x \rightarrow (x,1))\)</span>. These correspondences can be used to carry over whatever structure <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> may possess (for example, order) to <span class="math inline">\(\hat{E}\)</span> and <span class="math inline">\(\hat{F}\)</span>. It follows that any time we are given two sets, with or without some additional structure, we may always replace them by disjoint sets with the same structure, and hence we may assume, with no loss of generality, that they were disjoint in the first place.</p>
-<p>Before applying this construction to ordinal arithmetic, we observe that it can be generalized to arbitrary families of sets. If, indeed, <span class="math inline">\(\{ E_{i} \}\)</span> is a family, write <span class="math inline">\(\hat{E}_{i}\)</span> for the set of all ordered pairs <span class="math inline">\((x,i)\)</span>, with <span class="math inline">\(x\)</span> in <span class="math inline">\(E_{i}\)</span>. (In other words, <span class="math inline">\(\hat{E}_{i} = E_{i} \times \{ i \}\)</span>.) The family <span class="math inline">\(\{ \hat{E}_{i} \}\)</span> is pairwise disjoint, and it can do anything the original family <span class="math inline">\(\{ E_{i} \}\)</span> could do.</p>
-<p>Suppose now that <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> are disjoint well ordered sets. Define order in <span class="math inline">\(E \cup F\)</span> so that pairs of elements in <span class="math inline">\(E\)</span>, and also pairs of elements in <span class="math inline">\(F\)</span>, retain the order they had, and so that each element of <span class="math inline">\(E\)</span> precedes each element of <span class="math inline">\(F\)</span>. (In ultraformal language: if <span class="math inline">\(R\)</span> and <span class="math inline">\(S\)</span> are the given order relations in <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> respectively, let <span class="math inline">\(E \cup F\)</span> be ordered by <span class="math inline">\(R \cup S \cup (E \times F)\)</span>.) The fact that <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span> were well ordered implies that <span class="math inline">\(E \cup F\)</span> is well ordered. The well ordered set <span class="math inline">\(E \cup F\)</span> is called the <em>ordinal sum</em> of the well ordered sets <span class="math inline">\(E\)</span> and <span class="math inline">\(F\)</span>.</p>
-<p>There is an easy and worth while way of extending the concept of ordinal sum to infinitely many summands. Suppose that <span class="math inline">\(\{ E_{i} \}\)</span> is a disjoint family of well ordered sets indexed by well ordered set <span class="math inline">\(I\)</span>. The ordinal sum of the family is the union <span class="math inline">\(\bigcup_{i}E_{i}\)</span>, ordered as follows. If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are elements of the union, with <span class="math inline">\(a \in E_{i}\)</span> and <span class="math inline">\(b \in E_{j}\)</span>, then <span class="math inline">\(a &lt; b\)</span> means that either <span class="math inline">\(i &lt; j\)</span> or else <span class="math inline">\(i =j\)</span> and <span class="math inline">\(a\)</span> precedes <span class="math inline">\(b\)</span> in the given order of <span class="math inline">\(E_{i}\)</span>.</p>
-<p>The definition of addition for ordinal numbers is now child’s play. For each well ordered set <span class="math inline">\(X\)</span>, let <span class="math inline">\(\text{ord } X\)</span> be the unique ordinal number similar to <span class="math inline">\(X\)</span>. (If <span class="math inline">\(X\)</span> is finite, then <span class="math inline">\(\text{ord } X\)</span> is the same as the natural number <span class="math inline">\(\# (X)\)</span> defined earlier.) If <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are ordinal numbers, let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be disjoint well ordered sets with <span class="math inline">\(\text{ord } A = \alpha\)</span> and <span class="math inline">\(\text{ord } B = \beta\)</span>, and let <span class="math inline">\(C\)</span> be the ordinal sum of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. The <em>sum</em> <span class="math inline">\(\alpha + \beta\)</span> is, by definition, the ordinal number of <span class="math inline">\(C\)</span>, so that <span class="math inline">\(\text{ord } A + \text{ord } B = \text{ord } C\)</span>. It is important to note that the sum <span class="math inline">\(\alpha + \beta\)</span> is independent of the particular choice of the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>; any other pair of disjoint sets, with the same ordinal numbers, would have given the same result.</p>
-<p>These considerations extend without difficulty to the infinite case. If <span class="math inline">\(\{ \alpha_{i} \}\)</span> is a well ordered family of ordinal numbers indexed by a well ordered set <span class="math inline">\(I\)</span>, let <span class="math inline">\(\{ A_{i} \}\)</span> be a disjoint family of well ordered sets with <span class="math inline">\(\text{ord } A_{i} = \alpha_{i}\)</span> for each <span class="math inline">\(i\)</span>, and let <span class="math inline">\(A\)</span> be the ordinal sum of the family <span class="math inline">\(\{ A_{i} \}\)</span>. The sum <span class="math inline">\(\sum_{i \in I} \mathit{\ ord\ } A_{i}\)</span> is, by definition, the ordinal number of <span class="math inline">\(A\)</span>, so that <span class="math inline">\(\sum_{i \in I} \mathit{\ ord\ } A_{i} = \mathit{\ ord\ } A\)</span>. Here too the final result is independent of the arbitrary choice of the well ordered sets <span class="math inline">\(A_{i}\)</span>; any other choices (with the same ordinal numbers) would have given the same sum.</p>
-<p>Some of the properties of addition for ordinal numbers are good and others are bad. On the good side of the ledger are the identities</p>
-<p><span class="math display">\[
-\begin{aligned}
-\alpha + 0 &amp;= \alpha, \\
-0 + \alpha &amp;= \alpha, \\
-\alpha + 1 &amp;= \alpha^{+},
-\end{aligned}
-\]</span></p>
-<p>and the associative law</p>
-<p><span class="math display">\[
-\alpha + (\beta + \gamma) = (\alpha + \beta) + \gamma.
-\]</span></p>
-<p>Equally laudable is the fact that <span class="math inline">\(\alpha &lt; \beta\)</span> if and only if there exists an ordinal number <span class="math inline">\(\gamma\)</span> different from <span class="math inline">\(0\)</span> such that <span class="math inline">\(\beta =  \alpha + \gamma\)</span>. The proofs of all these assertions are elementary.</p>
-<p>Almost all the bad behavior of addition stems from the failure of the commutative law. Sample: <span class="math inline">\(1 + \omega = \omega\)</span> (but, as we saw just above, <span class="math inline">\(\omega + 1 \neq \omega\)</span>). The misbehavior of addition expresses some intuitively clear facts about order. If, for instance, we tack a new element in front of an infinite sequence (of type <span class="math inline">\(\omega\)</span>), the result is clearly similar to what we started with; but if we tack it on at the end instead, then we have ruined similarity; the old set had no last element but the new set has one.</p>
-<p>The main use of infinite sums is to motivate and facilitate the study of products. If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are well ordered sets, it is natural to define their product as the result of adding <span class="math inline">\(A\)</span> to itself <span class="math inline">\(B\)</span> times. To make sense out of this, we must first of all manufacture a disjoint family of well ordered sets, each of which is similar to <span class="math inline">\(A\)</span>, indexed by the set <span class="math inline">\(B\)</span>. The general prescription for doing this works well here; all we need to do is to write <span class="math inline">\(A_{b} = A \times \{  b \}\)</span> for each <span class="math inline">\(b\)</span> in <span class="math inline">\(B\)</span>. If now we examine the definition of ordinal sum as it applies to the family <span class="math inline">\(\{ A_{b} \}\)</span>, we are led to formulate the following definition. The <em>ordinal product</em> of two well ordered sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the Cartesian product <span class="math inline">\(A \times B\)</span> with the reverse lexicographic order. In other words, if <span class="math inline">\((a,b)\)</span> and <span class="math inline">\((c, d)\)</span> are in <span class="math inline">\(A \times B\)</span>, then <span class="math inline">\((a, b) &lt; (c, d)\)</span> means that either <span class="math inline">\(b &lt; d\)</span> or else <span class="math inline">\(b = d\)</span> and <span class="math inline">\(a &lt; c\)</span>.</p>
-<p>If <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are ordinal numbers, let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be well ordered sets with <span class="math inline">\(\text{ord } A = \alpha\)</span>, and <span class="math inline">\(\text{ord } B = \beta\)</span>, and let <span class="math inline">\(C\)</span> be the ordinal product of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. The <em>product</em> <span class="math inline">\(\alpha \beta\)</span> is, by definition, the ordinal number of <span class="math inline">\(C\)</span>, so that <span class="math inline">\((\text{ord } A)(\text{ord } B) = \text{ord } C\)</span>. The product is unambiguously defined, independently of the arbitrary choice of the well ordered sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. Alternatively, at this point we could have avoided any arbitrariness at all by recalling that the most easily available well ordered set whose ordinal number is <span class="math inline">\(\alpha\)</span> is the ordinal number <span class="math inline">\(\alpha\)</span> itself (and similarly for <span class="math inline">\(\beta\)</span>).</p>
-<p>Like addition, multiplication has its good and bad properties. Among the good ones are the identities</p>
-<p><span class="math display">\[
-\begin{aligned}
-\alpha 0 &amp;= 0, \\
-0 \alpha &amp;= 0, \\
-\alpha 1 &amp;= \alpha, \\
-1 \alpha &amp;= \alpha,
-\end{aligned}
-\]</span></p>
-<p>the associative law</p>
-<p><span class="math display">\[
-\alpha ( \beta \gamma) = ( \alpha \beta ) \gamma,
-\]</span></p>
-<p>the left distributive law</p>
-<p><span class="math display">\[
-\alpha ( \beta  +\gamma) = ( \alpha \beta ) + \alpha \gamma,
-\]</span></p>
-<p>and the fact that if the product of two ordinal numbers is zero, then one of the factors must be zero. (Note that we use the standard convention about multiplication taking precedence over addition; <span class="math inline">\(\alpha \beta + \alpha \gamma\)</span> denotes <span class="math inline">\((\alpha \beta) + (\alpha \gamma)\)</span>.)</p>
-<p>The commutative law for multiplication fails, and so do many of its consequences. Thus, for instance, <span class="math inline">\(2 \omega = \omega\)</span> (think of an infinite sequence of ordered pairs), but <span class="math inline">\(\omega 2 \neq \omega\)</span> (think of an ordered pair of infinite sequences). The right distributive law also fails; that is <span class="math inline">\((\alpha + \beta) \gamma\)</span> is in general different from <span class="math inline">\(\alpha \gamma + \beta \gamma\)</span>. Example: <span class="math inline">\((1 + 1) \omega = 2 \omega = \omega\)</span>, but <span class="math inline">\(1 \omega + 1 \omega = \omega + \omega = \omega 2\)</span>.</p>
-<p>Just as repeated addition led to the definition of ordinal products, repeated multiplication could be used to define ordinal exponents. Alternatively, exponentiation can be approached via transfinite recursion. The precise details are part of an extensive and highly specialized theory of ordinal numbers. At this point we shall be content with hinting at the definition and mentioning its easiest consequences. To define <span class="math inline">\(\alpha^{\beta}\)</span> (where <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are ordinal numbers), use definition by transfinite induction (on <span class="math inline">\(\beta\)</span>). Begin by writing <span class="math inline">\(\alpha^{0} = 1\)</span> and <span class="math inline">\(\alpha^{\beta + 1} = \alpha^{\beta} \alpha\)</span>; if <span class="math inline">\(\beta\)</span> is a limit number, define <span class="math inline">\(\alpha^{\beta}\)</span> as the supremum of the numbers of the form <span class="math inline">\(\alpha^{\gamma}\)</span>, where <span class="math inline">\(\gamma &lt; \beta\)</span>. If this sketch of a definition is formulated with care, it follows that</p>
-<p><span class="math display">\[
-\begin{aligned}
-0^{\alpha} &amp;= 0 \quad (\alpha \ge 1), \\
-1^{\gamma} &amp;= 1, \\
-\alpha^{\beta + \gamma} &amp;= \alpha^{\beta} \alpha^{\gamma}, \\
-\alpha^{\beta \gamma} &amp;= (\alpha^{\beta})^{\gamma}.
-\end{aligned}
-\]</span></p>
-<p>Not all the familiar laws of exponents hold; thus, for instance, <span class="math inline">\(( \alpha \beta)^{\gamma}\)</span> is in general different from <span class="math inline">\(\alpha^{\gamma} \beta^{\gamma}\)</span>. Example: <span class="math inline">\((2 \cdot 2)^{\omega} = 4^{\omega} = \omega\)</span>, but <span class="math inline">\(2^{\omega} \cdot 2^{\omega} = \omega \cdot \omega =  \omega^{2}\)</span>.</p>
-<p>Warning: the exponent notation for ordinal numbers, here and below, is not consistent with our earlier use of it. The unordered set <span class="math inline">\(2^{\omega}\)</span> of all functions from <span class="math inline">\(\omega\)</span> to <span class="math inline">\(2\)</span>, and the well ordered set <span class="math inline">\(2^{\omega}\)</span> that is the least upper bound of the sequence of ordinal numbers <span class="math inline">\(2\)</span>, <span class="math inline">\(2 \cdot 2\)</span>, <span class="math inline">\(2 \cdot 2 \cdot 2\)</span>, etc., are not the same thing at all. There is no help for it; mathematical usage is firmly established in both camps. If, in a particular situation, the context does not reveal which of the two interpretations is to be used, then explicit verbal indication must be given.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-suppes_axiomatic_1960" class="csl-entry" role="listitem">
+Suppes, P. C. (1960). <em>Axiomatic <span>Set</span>
+<span>Theory</span></em> (1st ed.). D. Van Nostrand Company, Inc.
+</div>
+</div>
 
 
 
@@ -810,14 +751,11 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_20.html" class="pagination-link" aria-label="Sets of Ordinal Numbers">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Sets of Ordinal Numbers</span></span>
+      <a href="./chapter_25.html" class="pagination-link" aria-label="Cardinal Numbers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cardinal Numbers</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_22.html" class="pagination-link" aria-label="The Schröder-Bernstein Theorem">
-        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">The Schröder-Bernstein Theorem</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -825,4 +763,4 @@ window.Quarto = {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/edit/main/chapter_21.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/blob/main/chapter_21.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/edit/main/references.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/blob/main/references.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
