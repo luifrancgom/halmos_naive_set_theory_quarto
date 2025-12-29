@@ -47,6 +47,7 @@ book:
     - chapter_23.qmd
     - chapter_24.qmd
     - chapter_25.qmd
+    - references.qmd
 
 format:
   html:
@@ -80,6 +81,9 @@ format:
     classoption: [headsepline=true, pagesize=auto]
     papersize: b5
     indent: true
+    # references
+    link-citations: true
+    link-bibliography: true
     # includes
     include-in-header: 
       - file: partials/latex/header.tex
@@ -91,6 +95,10 @@ format:
       - partials/latex/title.tex
     # keep-md: true
     # keep-tex: true
+
+# citations
+bibliography: references/halmos_naive_set_theory_quarto.bib
+csl: references/apa_7ed.csl 
 
 # Partial solution to include axioms
 crossref:
