@@ -64,7 +64,7 @@ format:
 ```
 After saving the changes to `_quarto.yml`, run `quarto render` again. The files will then remain in your project directory for you to access.
 
-## License and Attribution
+## ⚖️ License and Attribution
 
 This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE.md).
 
