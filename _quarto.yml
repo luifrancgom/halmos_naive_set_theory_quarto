@@ -89,6 +89,8 @@ format:
     template: partials/latex/template.tex
     template-partials: 
       - partials/latex/title.tex
+    # keep-md: true
+    # keep-tex: true
 
 # Partial solution to include axioms
 crossref:
