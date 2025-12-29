@@ -1,6 +1,7 @@
 # Halmos: Naive Set Theory (Quarto Edition)
 
 [![Quarto Publish](https://github.com/luifrancgom/halmos_naive_set_theory_quarto/actions/workflows/publish.yml/badge.svg)](https://github.com/luifrancgom/halmos_naive_set_theory_quarto/actions/workflows/publish.yml)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 This repository contains a modern re-edition of Paul R. Halmos's classic **Naive Set Theory**, authored using [Quarto](https://quarto.org/). 
 
@@ -62,3 +63,13 @@ format:
     keep-tex: true
 ```
 After saving the changes to `_quarto.yml`, run `quarto render` again. The files will then remain in your project directory for you to access.
+
+## License and Attribution
+
+This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE.md).
+
+### Credits
+
+* **Original Text:** *Naive Set Theory* (1960) by **Paul Halmos**. The original content is in the **Public Domain** and can be accessed via the [HathiTrust Digital Library](https://babel.hathitrust.org/cgi/pt?id=mdp.39015002409556).
+* **LaTeX Source & OCR:** This edition is based on the LaTeX conversion and OCR work by [Matheus Girola Macedo Barbosa](https://github.com/matheusgirola/Halmos-Naive-Set-Theory-OCR-LaTeX-Reedition). Used with permission.
+* **Quarto Conversion:** Modernized and converted to Quarto by [Luis Francisco Gomez Lopez](https://github.com/luifrancgom/halmos_naive_set_theory_quarto).
