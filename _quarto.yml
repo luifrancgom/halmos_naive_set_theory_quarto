@@ -15,10 +15,13 @@ book:
       position: Professor of Mathematics
       affiliations:
         - name: University of Michigan
+  cover-image: images/cover_halmos_naive_set_theory.png
   downloads: [pdf]
+  favicon: images/favicon_halmos_naive_set_theory.ico
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
   issue-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues
   repo-actions: [edit, source, issue]
+  reader-mode: true
   chapters:
     - index.qmd
     - preface.qmd
@@ -68,6 +71,8 @@ format:
     # format options
     pdf-engine: xelatex
     # table of contents
+    # Trick to move the table of contents after the prefaces
+    # See https://github.com/orgs/quarto-dev/discussions/9839
     toc: false
     # fonts
     fontsize: 12pt
@@ -91,8 +96,9 @@ format:
       - file: partials/latex/after-body.tex
     # rendering
     template: partials/latex/template.tex
-    template-partials: 
+    template-partials:
       - partials/latex/title.tex
+      - partials/latex/before-body.tex
     # keep-md: true
     # keep-tex: true
 
@@ -107,3 +113,4 @@ crossref:
   cnj-labels: arabic
 
 engine: knitr
+editor: source

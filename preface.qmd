@@ -20,7 +20,10 @@ https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
 P. R. H.
 :::
 
-<!-- Move the table of contents, then call \mainmatter -->
+<!-- Move the table of contents, then call \mainmatter 
+Check
+https://github.com/orgs/quarto-dev/discussions/9839
+-->
 
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
