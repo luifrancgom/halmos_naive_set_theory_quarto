@@ -1,0 +1,22 @@
+% --- BEGIN CUSTOM COVER PAGE ---
+$if(cover-image)$
+\begin{titlepage}
+    \newgeometry{margin=0pt} % Removes B5 margins for the cover image
+    \centering
+    \includegraphics[width=\paperwidth, height=\paperheight]{$cover-image$}
+\end{titlepage}
+\restoregeometry % Returns margins to standard b5 settings
+\cleardoublepage % Ensures the next section starts on a right-hand page
+$endif$
+% --- END CUSTOM COVER PAGE ---
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
+\maketitle
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$
