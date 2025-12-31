@@ -1,7 +1,7 @@
 # Halmos: Naive Set Theory (Quarto Edition)
 
 [![Quarto Publish](https://github.com/luifrancgom/halmos_naive_set_theory_quarto/actions/workflows/publish.yml/badge.svg)](https://github.com/luifrancgom/halmos_naive_set_theory_quarto/actions/workflows/publish.yml)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This repository contains a modern re-edition of Paul R. Halmos's classic **Naive Set Theory**, authored using [Quarto](https://quarto.org/). 
 
