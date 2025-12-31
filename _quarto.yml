@@ -98,7 +98,7 @@ format:
     template: partials/latex/template.tex
     template-partials:
       - partials/latex/title.tex
-    # - partials/latex/before-body.tex
+      - partials/latex/before-body.tex
     # keep-md: true
     # keep-tex: true
 

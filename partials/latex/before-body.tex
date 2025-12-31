@@ -1,13 +1,16 @@
 % --- BEGIN CUSTOM COVER PAGE ---
-$if(cover-image)$
+% Hard coding: not the optimal solution
 \begin{titlepage}
-    \newgeometry{margin=0pt} % Removes B5 margins for the cover image
-    \centering
-    \includegraphics[width=\paperwidth, height=\paperheight]{$cover-image$}
+    \newgeometry{margin=0pt}
+    \thispagestyle{empty}
+    \noindent
+    \begin{minipage}[c][\paperheight][c]{\paperwidth}
+        \centering
+        \includegraphics[width=\paperwidth, height=\paperheight]{images/cover_halmos_naive_set_theory.png}
+    \end{minipage}
 \end{titlepage}
-\restoregeometry % Returns margins to standard b5 settings
-\cleardoublepage % Ensures the next section starts on a right-hand page
-$endif$
+\restoregeometry
+\cleardoublepage
 % --- END CUSTOM COVER PAGE ---
 $if(has-frontmatter)$
 \frontmatter
