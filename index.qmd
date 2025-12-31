@@ -1,4 +1,4 @@
-# Preface by the Editor {.unnumbered}
+# Preface by the Editors {.unnumbered}
 
 As the book title says, this is the famous set theory book *Naive Set Theory* by Paul Richard Halmos, first published in 1960 by D. Van Nostrand Company, INC., part of a series called *The University Series in Undergraduate Mathematics*.
 
@@ -19,5 +19,17 @@ https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
 -->
 
 ::: {.flushright latex=""}
-Matheus Girola Macedo Barbosa - 01/07/2024
+Matheus Girola Macedo Barbosa - 2024-07-01
+:::
+
+This book is a modernized re-edition of Paul R. Halmos’s classic Naive Set Theory, authored using [Quarto](https://quarto.org/) and based on the LaTeX source and OCR work by [Matheus Girola Macedo Barbosa](https://github.com/matheusgirola/Halmos-Naive-Set-Theory-OCR-LaTeX-Reedition). This version is available for free download on my [Github repository](https://github.com/luifrancgom/halmos_naive_set_theory_quarto) repository and is licensed under the [CC BY-NC-SA 4.0]( https://creativecommons.org/licenses/by-nc-sa/4.0/). The cover features a detail from [The Garden of Earthly Delights](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) by Hieronymus Bosch (circa 1450–1516), a public domain work chosen to reflect the intricate and foundational nature of the set-theoretic universe.
+
+<!--
+Check
+https://github.com/orgs/quarto-dev/discussions/13178
+https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
+-->
+
+::: {.flushright latex=""}
+Luis Francisco Gomez Lopez - 2025-12-31
 :::

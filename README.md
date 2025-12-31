@@ -66,7 +66,7 @@ After saving the changes to `_quarto.yml`, run `quarto render` again. The files 
 
 ## ⚖️ License and Attribution
 
-This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE.md).
+This project is licensed under the [CC BY-NC-SA 4.0](LICENSE.md).
 
 ### Credits
 
