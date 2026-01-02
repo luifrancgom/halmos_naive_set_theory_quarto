@@ -1,16 +1,17 @@
 % --- BEGIN CUSTOM COVER PAGE ---
-% Hard coding: not the optimal solution
+$if(book.cover-image)$
 \begin{titlepage}
     \newgeometry{margin=0pt}
     \thispagestyle{empty}
     \noindent
     \begin{minipage}[c][\paperheight][c]{\paperwidth}
         \centering
-        \includegraphics[width=\paperwidth, height=\paperheight]{images/cover_halmos_naive_set_theory.png}
+        \includegraphics[width=\paperwidth, height=\paperheight]{$book.cover-image$}
     \end{minipage}
 \end{titlepage}
 \restoregeometry
 \cleardoublepage
+$endif$
 % --- END CUSTOM COVER PAGE ---
 $if(has-frontmatter)$
 \frontmatter
