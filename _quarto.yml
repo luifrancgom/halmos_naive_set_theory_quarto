@@ -101,10 +101,14 @@ format:
       - partials/latex/before-body.tex
     # keep-md: true
     # keep-tex: true
+  # docx:
+  #   # table of contents  
+  #   toc: true
+  #   number-sections: true
 
 # citations
 bibliography: references/halmos_naive_set_theory_quarto.bib
-csl: references/apa_7ed.csl 
+csl: references/ieee.csl
 
 # Partial solution to include axioms
 crossref:
