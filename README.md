@@ -73,3 +73,4 @@ This project is licensed under the [CC BY-NC-SA 4.0](LICENSE.md).
 * **Original Text:** *Naive Set Theory* (1960) by **Paul Halmos**. The original content is in the **Public Domain** and can be accessed via the [HathiTrust Digital Library](https://babel.hathitrust.org/cgi/pt?id=mdp.39015002409556).
 * **LaTeX Source & OCR:** This edition is based on the LaTeX conversion and OCR work by [Matheus Girola Macedo Barbosa](https://github.com/matheusgirola/Halmos-Naive-Set-Theory-OCR-LaTeX-Reedition). Used with permission.
 * **Quarto Conversion:** Modernized and converted to Quarto by [Luis Francisco Gomez Lopez](https://github.com/luifrancgom/halmos_naive_set_theory_quarto).
+* **Cover Image:** Corresponds to a fragment of [The Garden of Earthly Delights](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) by Hieronymus Bosch (circa 1450–1516), which is a **Public Domain** work.
