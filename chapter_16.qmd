@@ -10,7 +10,7 @@ If $X$ is a partially ordered set such that every chain in $X$ has an upper boun
 
 :::
 
-`\textsc{Discussion}`{=latex}`<span class="smallcaps">Discussion</span>`{=html}. Recall that a chain is a totally ordered set. By a chain "in $X$" we mean a subset of $X$ such that the subset, considered as a partially ordered set on its own right, turns out to be totally ordered. If $A$ is a chain in $X$, the hypothesis of Zorn's lemma guarantees the existence of an upper bound for $A$ in $X$; it does not guarantee the existence of an upper bound for $A$ in $A$. The conclusion of Zorn's lemma is the existence of an element $a$ in $X$ with the property that if $a \le x$, then necessarily $a = x$. 
+[Discussion]{.smallcaps}. Recall that a chain is a totally ordered set. By a chain "in $X$" we mean a subset of $X$ such that the subset, considered as a partially ordered set on its own right, turns out to be totally ordered. If $A$ is a chain in $X$, the hypothesis of Zorn's lemma guarantees the existence of an upper bound for $A$ in $X$; it does not guarantee the existence of an upper bound for $A$ in $A$. The conclusion of Zorn's lemma is the existence of an element $a$ in $X$ with the property that if $a \le x$, then necessarily $a = x$. 
 
 The basic idea of the proof is similar to the one used in our preceding discussion of infinite sets. Since, by hypothesis, $X$ is not empty, it has an element, say $x_{0}$. If $x_{0}$ is maximal, stop here. If it is not, then there exists an element, say $x_{1}$, strictly greater than $x_{0}$. If $x_{1}$ is maximal, stop here; otherwise continue. Repeat this argument ad infinitum; ultimately it must lead to a maximal element. 
 

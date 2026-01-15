@@ -38,7 +38,7 @@ Every set can be well ordered.
 
 :::
 
-`\textsc{Discussion}`{=latex}`<span class="smallcaps">Discussion</span>`{=html}. A better (but less traditional) statement is this: for each set $X$, there is a well ordering with domain $X$. Warning: the well ordering is not promised to have any relation whatsoever to any other structure that the given set might already possess. If, for instance, the reader knows of some partially or totally ordered sets whose ordering is very definitely not a well ordering, he should not jump to the conclusion that he has discovered a paradox. The only conclusion to be drawn is that some sets can be ordered in many ways, some of which are well orderings others are not, and we already knew that.
+[Discussion]{.smallcaps}. A better (but less traditional) statement is this: for each set $X$, there is a well ordering with domain $X$. Warning: the well ordering is not promised to have any relation whatsoever to any other structure that the given set might already possess. If, for instance, the reader knows of some partially or totally ordered sets whose ordering is very definitely not a well ordering, he should not jump to the conclusion that he has discovered a paradox. The only conclusion to be drawn is that some sets can be ordered in many ways, some of which are well orderings others are not, and we already knew that.
 
 ::: {.proof}
 

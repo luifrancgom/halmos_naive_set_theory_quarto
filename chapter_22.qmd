@@ -26,7 +26,7 @@ The interesting question is that of antisymmetry. If $X \precsim Y$ and $Y \prec
 If $X \precsim Y$ and $Y \precsim X$, then $X \sim Y$.
 :::
 
-`\textsc{Remark}`{=latex}`<span class="smallcaps">Remark</span>`{=html}. Observe that the converse, which is incidentally a considerable strengthening of the assertion of reflexivity, follows trivially from the definition of domination.
+[Remark]{.smallcaps}. Observe that the converse, which is incidentally a considerable strengthening of the assertion of reflexivity, follows trivially from the definition of domination.
 
 ::: {.proof}
 Let $f$ be a one-to-one mapping from $X$ into $Y$ and let $g$ be a one-to-one mapping from $Y$ into $X$; the problem is to construct a one-to-one correspondence between $X$ and $Y$. It is convenient to assume that the sets $X$ and $Y$ have no elements in common; if that is not true, we can so easily make it true that the added assumption involves no loss of generality.
