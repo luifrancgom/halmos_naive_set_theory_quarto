@@ -3,11 +3,9 @@
 An existence theorem asserts the existence of an object belonging to a certain set and possessing certain properties. Many existence theorems can be formulated (or, if need be, reformulated) so that the underlying set is a partially ordered set and the crucial property is maximality. Our next purpose is to state and prove the most important theorem of this kind.
 
 ::: {#lem-zorn}
-
 ## Zorn's lemma`\index{Zorn}`{=latex}
 
 If $X$ is a partially ordered set such that every chain in $X$ has an upper bound, then $X$ contains a maximal element. 
-
 :::
 
 [Discussion]{.smallcaps}. Recall that a chain is a totally ordered set. By a chain "in $X$" we mean a subset of $X$ such that the subset, considered as a partially ordered set on its own right, turns out to be totally ordered. If $A$ is a chain in $X$, the hypothesis of Zorn's lemma guarantees the existence of an upper bound for $A$ in $X$; it does not guarantee the existence of an upper bound for $A$ in $A$. The conclusion of Zorn's lemma is the existence of an element $a$ in $X$ with the property that if $a \le x$, then necessarily $a = x$. 
@@ -17,7 +15,6 @@ The basic idea of the proof is similar to the one used in our preceding discussi
 The last sentence is probably the least convincing part of the argument; it hides a multitude of difficulties. Observe, for instance, the following possibility. It could happen that the argument, repeated ad infinitum, leads to a whole infinite sequence of non-maximal elements; what are we to do in that case? The answer is that the range of such an infinite sequence is a chain in $X$, and, consequently, has an upper bound; the thing to do is to start the whole argument all over again, beginning with that upper bound. Just exactly when and how all this comes to an end is obscure, to say the least. There is no help for it; we must look at the precise proof. The structure of the proof is an adaptation of one originally given by Zermelo.
 
 ::: {.proof}
-
 The first step is to replace the abstract partial ordering by the inclusion order in a suitable collection of sets. More precisely, we consider, for each element $x$ in $X$, the weak initial segment $\bar{s}(x)$ consisting of $x$ and all its predecessors. The range $\mathcal{S}$ of the function $\bar{s}$ (from $X$ to $\mathcal{P}(X)$) is a certain collection of subsets of $X$, which we may, of course, regard as (partially) ordered by inclusion. The function $\bar{s}$ is one-to-one, and a necessary and sufficient condition that $\bar{s}(x) \subset \bar{s}(y)$ is that $x \le y$. In view of this, the task of finding a maximal element in $X$ is the same as the task of finding a maximal set in $\mathcal{S}$. The hypothesis about chains in $X$ implies (and is, in fact, equivalent to) the corresponding statement about chains in $\mathcal{S}$. 
 
 Let $\mathcal{X}$ be the set of all chains in $X$; every member of $\mathcal{X}$ is included in $\bar{s}(x)$ for some $x$ in $X$. The collection $\mathcal{X}$ is a non-empty collection of sets, partially ordered by inclusion, and such that if $\mathcal{C}$ is a chain in $\mathcal{X}$, then the union of the sets in $\mathcal{C}$ (i.e., $\bigcup_{A \in \mathcal{C}} A$) belongs to $\mathcal{X}$. Since each set in $\mathcal{X}$ is dominated by some set in $\mathcal{S}$, the passage from $\mathcal{S}$ to $\mathcal{X}$ cannot introduce any new maximal elements. One advantage of the collection $\mathcal{X}$ is the slightly more specific form that the chain hypothesis assumes; instead of saying that each chain $\mathcal{C}$ has some upper bound in $\mathcal{S}$, we can say explicitly that the union of the sets of $\mathcal{C}$, which is clearly an upper bound of $\mathcal{C}$, is an element of the collection $\mathcal{X}$. Another technical advantage of $\mathcal{X}$ is that it contains all the subsets of each of its sets; this makes it possible to enlarge non-maximal sets in $\mathcal{X}$ slowly, one element at a time. 
@@ -49,11 +46,12 @@ The preceding considerations imply that for each comparable set $C$ the set $g(C
 We now know that $\emptyset$ is comparable and that $g$ maps comparable sets onto comparable sets. Since the union of a chain of comparable sets is comparable, it follows that the comparable sets (in $\mathcal{J}_{0}$) constitute a tower, and hence that they exhaust $\mathcal{J}_{0}$; this is what we set out to prove about $\mathcal{J}_{0}$. 
 
 Since $\mathcal{J}_{0}$ is a chain, the union, say $A$, of all the sets in $\mathcal{J}_{0}$ is itself a set in $\mathcal{J}_{0}$. Since the union includes all the sets in $\mathcal{J}_{0}$, it follows that $g(A) \subset A$. Since always $A \subset g(A)$, it follows that $A = g(A)$, and the proof of Zorn'lemma is complete.
-
 :::
 
 ::: {#exr-16-1}
-
 Zorn's lemma is equivalent to the axiom of choice. [Hint for the proof: given a set $X$, consider functions $f$ such that $\text{dom } f \subset \mathcal{P}(X)$, $\text{ran } f \subset X$, and $f(A) \in A$ for all $A$ in $\text{dom } f$; order these functions by extension, use Zorn's lemma to find a maximal one among them, and prove that if $f$ is maximal, then $\text{dom } f = \mathcal{P}(X) - \{ \emptyset \}$.] Consider each of the following statements and prove that they too are equivalent to the axiom of choice. (i) Every partially ordered set has a maximal chain (i.e., a chain that is not a proper subset of any other chain). (ii) Every chain in a partially ordered set is included in some maximal chain. (iii) Every partially ordered set in which each chain has a least upper bound has a maximal element.
+:::
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::

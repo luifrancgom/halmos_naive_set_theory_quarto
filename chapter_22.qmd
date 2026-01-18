@@ -43,3 +43,7 @@ Suppose that $f$ is a mapping from $X$ into $Y$ and $g$ is a mapping from $Y$ in
 :::
 
 By now we know that domination has the essential properties of a partial order; we conclude this introductory discussion by observing that the order is in fact total. The assertion is known as the comparability theorem`\index{comparability theorem}`{=latex} for sets: it says that if $X$ and $Y$ are sets, then either $X \precsim Y$ or $Y \precsim X$. The proof is an immediate consequence of the well ordering theorem and of comparability theorem for well ordered sets. Well order both $X$ and $Y$ and use the fact that either the well ordered sets so obtained are similar or one of them is similar to an initial segment of the other; in the former case $X$ and $Y$ are equivalent, in the latter one of them is equivalent to a subset of the other.
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

@@ -23,33 +23,29 @@ The proof is straightforward. If $a$ and $b$ are in $U$, then there exist sets $
 A direct verification shows that the relation defined in the preceding paragraph is indeed an order, and that, moreover, its  construction was forced on us at every step (i.e., that the final order is uniquely determined by the given orders). The proof that the result is actually a well ordering is equally direct. Each non-empty subset of $U$ must have non-empty intersection with some set in $\mathcal{C}$, and hence it must have a first element in that set; the fact that $\mathcal{C}$ is a continuation chain implies that that first element is necessarily the first element of $U$ also.
 
 ::: {#exr-17-1}
-
 A subset $A$ of a partially ordered set $X$ is *cofinal*`\index{cofinal}`{=latex} in $X$ in case for each element $x$ of $X$ there exists an element $a$ of $A$ such that $x \le a$. Prove that every totally ordered set has a cofinal well ordered subset.
-
 :::
 
 The importance of well ordering stems from the following result, from which we may infer, among other things, that the principle of transfinite induction is much more widely applicable than a casual glance might indicate.
 
 ::: {#thm-well-ordering}
-
 ## Well ordering theorem
 
 Every set can be well ordered.
-
 :::
 
 [Discussion]{.smallcaps}. A better (but less traditional) statement is this: for each set $X$, there is a well ordering with domain $X$. Warning: the well ordering is not promised to have any relation whatsoever to any other structure that the given set might already possess. If, for instance, the reader knows of some partially or totally ordered sets whose ordering is very definitely not a well ordering, he should not jump to the conclusion that he has discovered a paradox. The only conclusion to be drawn is that some sets can be ordered in many ways, some of which are well orderings others are not, and we already knew that.
 
 ::: {.proof}
-
 We apply Zorn's lemma. Given the set $X$, consider the collection $\mathcal{W}$ of all well ordered subsets of $X$. Explicitly: an element of $\mathcal{W}$ is a subset $A$ of $X$ together with a well ordering of $A$. We partially order $\mathcal{W}$ by continuation.
 
 The collection $\mathcal{W}$ is not empty, because, for instance, $\emptyset \in \mathcal{W}$. If $X \neq \emptyset$, less annoying elements of $\mathcal{W}$ can be exhibited; one such is $\{ (x,x) \}$, for any particular element $x$ of $X$. If $\mathcal{C}$ is a chain in $\mathcal{W}$ then the union $U$ of the sets in $\mathcal{C}$ has a unique well ordering that makes $U$ "larger" than (or equal to) each set in $\mathcal{C}$; this is exactly what our preceding discussion of continuation has accomplished. This means that the principal hypothesis of Zorn's lemma has been verified; the conclusion is that there exists a maximal well ordered set, say $M$, in $\mathcal{W}$. The set $M$ must be equal to the entire set $X$. Reason: if $x$ is an element of $X$ not in $M$, then $M$ can be enlarged by putting $x$ after all the elements of $M$. The rigorous formulation of this unambiguous but informal description is left as an exercise for the reader. With that out of the way, the proof of the well ordering theorem is complete.
-
 :::
 
 ::: {#exr-17-2}
-
 Prove that a totally ordered set is well ordered if and only if the set of strict predecessors of each element is well ordered. Does any such condition apply to partially ordered sets? Prove that the well ordering theorem implies the axiom of choice (and hence is equivalent to that axiom and to Zorn's lemma). Prove that if $R$ is a partial order in a set $X$, then there exists a total order $S$ in $X$ such that $R \subset S$; in other words, every partial order can be extended to total a order without enlarging the domain.
+:::
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::

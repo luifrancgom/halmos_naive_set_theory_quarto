@@ -81,3 +81,7 @@ $$
 Not all the familiar laws of exponents hold; thus, for instance, $( \alpha \beta)^{\gamma}$ is in general different from $\alpha^{\gamma} \beta^{\gamma}$. Example: $(2 \cdot 2)^{\omega} = 4^{\omega} = \omega$, but $2^{\omega} \cdot 2^{\omega} = \omega \cdot \omega =  \omega^{2}$.
 
 Warning: the exponent notation for ordinal numbers, here and below, is not consistent with our earlier use of it. The unordered set $2^{\omega}$ of all functions from $\omega$ to $2$, and the well ordered set $2^{\omega}$ that is the least upper bound of the sequence of ordinal numbers $2$, $2 \cdot 2$, $2 \cdot 2 \cdot 2$, etc., are not the same thing at all. There is no help for it; mathematical usage is firmly established in both camps. If, in a particular situation, the context does not reveal which of the two interpretations is to be used, then explicit verbal indication must be given.
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

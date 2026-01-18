@@ -66,11 +66,9 @@ This is nothing revolutionary; for each non-empty collection, the new definition
 We have been considering the subsets of a set $E$; do those subsets themselves constitute a set? The following principle guarantees that the answer is yes.
 
 ::: {#cnj-powers}
-
 ## Axiom of powers`\index{axiom of powers}`{=latex}
 
 For each set there exists a collection of sets that contains among its elements all the subsets of the given set.
-
 :::
 
 In other words, if $E$ is a set, then there exists a set (collection) $\mathcal{P}$ such that if $X \subset E$, then $X \in \mathcal{P}$.
@@ -130,7 +128,6 @@ $$
 The proofs of these equations are immediate consequences of the appropriate definitions.
 
 ::: {#exr-5-1}
-
 Prove that $\mathcal{P}(E) \cap \mathcal{P}(F) = \mathcal{P}(E \cap F)$ and $\mathcal{P}(E) \cup \mathcal{P}(F) \subset \mathcal{P}(E \cup F)$. These assertions can be generalized to 
 
 $$
@@ -156,5 +153,8 @@ $$
 $$
 
 A curious question concerns the commutativity of the operators $\mathcal{P}$ and $\bigcup$. Show that $E$ is always equal $\bigcup_{X \in \mathcal{P}(E)} X$ (that is $E = \bigcup \mathcal{P}(E)$), but that the result of applying $\mathcal{P}$ and $\bigcup$ to $E$ in the other order is a set that includes $E$ as a subset, typically a proper subset.
+:::
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::

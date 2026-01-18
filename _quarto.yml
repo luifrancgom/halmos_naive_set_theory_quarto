@@ -16,7 +16,7 @@ book:
       affiliations:
         - name: University of Michigan
   cover-image: images/cover_halmos_naive_set_theory.png
-  downloads: [pdf]
+  downloads: [pdf, docx]
   favicon: images/favicon_halmos_naive_set_theory.ico
   repo-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/
   issue-url: https://github.com/luifrancgom/halmos_naive_set_theory_quarto/issues
@@ -101,10 +101,12 @@ format:
       - partials/latex/before-body.tex
     # keep-md: true
     # keep-tex: true
-  # docx:
-  #   # table of contents  
-  #   toc: true
-  #   number-sections: true
+  docx:
+    # format options
+    reference-doc: word/custom-reference-doc.docx
+    # table of contents  
+    toc: true
+    number-sections: true
 
 # citations
 bibliography: references/halmos_naive_set_theory_quarto.bib

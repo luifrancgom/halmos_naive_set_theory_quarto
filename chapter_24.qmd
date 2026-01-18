@@ -95,3 +95,7 @@ Assume that $\text{card } X < \text{card } A$. Since $\text{card } A$ is equal t
 ::: {#exr-24-5}
 Prove that if $a$ and $b$ are cardinal numbers at least one of which is infinite, then $a + b = ab$. Prove that if $a$ and $b$ are cardinal numbers such that $a$ is infinite and $b$ is finite, then $a^{b} = a$.
 :::
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

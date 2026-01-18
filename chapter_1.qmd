@@ -60,3 +60,7 @@ The wording of the definition implies that each set must be considered to be inc
 If $A$ and $B$ are sets such that $A \subset B$ and $B \subset A$, then $A$ and $B$ have the same elements and therefore, by the axiom of extension, $A = B$. This fact is described by saying that set inclusion is *antisymmetric*`\index{antisymmetric}`{=latex}. (In this respect set inclusion behaves differently from equality. Equality is *symmetric*`\index{symmetric}`{=latex}, in the sense that if $A = B$, then necessarily $B = A$.) The axiom of extension can, in fact, be reformulated in these terms: if $A$ and $B$ are sets, then a necessary and sufficient condition that $A = B$ is that both $A \subset B$ and $B \subset A$. Correspondingly , almost all proofs of equalities between two sets $A$ and $B$ are split into two parts; first show that $A \subset B$, and then show that $B \subset A$.
 
 Observe that belonging ($\in$) and inclusion ($\subset$) are conceptually very different indeed. One important difference has already manifested itself above: inclusion is always reflexive, whereas it is not at all clear that belonging is ever reflexive. That is: $A \subset A$ is always true; is $A \in A$ ever true? It is certainly not true of any reasonable set that anyone has ever seen. Observe, along the same lines, that inclusion is transitive, whereas belonging is not. Everyday examples, involving, for instance, super-organizations whose members are organizations, will readily occur to the interested reader.
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

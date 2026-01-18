@@ -7,11 +7,9 @@ The question calls for a set, say $T$, containing $\omega$, such that each eleme
 We know that for each natural number $n$ we are permitted to form the set $\{ x: S(n,x) \}$. In other words, for each natural number $n$, there exists a set $F(n)$ such that $x \in F(n)$ if and only if $S(n,x)$ is true. The connection between $n$ and $F(n)$ looks much like a function. It turns out, however that none of the methods of set construction that we have seen so far is sufficiently strong to prove the existence of a set $F$ of ordered pairs such that $(n, y) \in F$ if and only if $y = \{ x: S(n,x) \}$. To achieve this obviously desirable state of affairs, we need one more set-theoretic principle (our last). The new principle says, roughly speaking, that anything intelligent that one can do to the elements of a set yields a set.
 
 ::: {#cnj-extension}
-
 ## Axiom of substitution`\index{axiom of substitution}`{=latex}
 
 If $S(a,b)$ is a sentence such that for each $a$ in a set $A$ the set $\{ b: S(a, b) \}$ can be formed, then there exists a function $F$ with domain $A$ such that $F(a) = \{ b: S(a,b) \}$ for each $a$ in $A$.
-
 :::
 
 To say that $\{ b: S(a,b) \}$ can be formed means, of course, that there exists a set $F(a)$ such that $b \in F(a)$ if and only if $S(a,b)$ is true. The axiom of extension implies that the function described in the axiom of substitution is uniquely determined by the given sentence and the given set. The reason for the name of the axiom is that it enables us to make a new set out an old one by substituting something new for each element of the old.
@@ -28,3 +26,6 @@ An order (partial or total) in a set $X$ is uniquely determined by its initial s
 
 We conclude this preliminary discussion of ordinal numbers by mentioning the names of the first few of them. After $0$, $1$, $2$, $\cdots$ comes $\omega$, and after $\omega$, $\omega + 1$, $\omega + 2$, $\cdots$ comes $\omega 2$. After $\omega 2 + 1$ (that is, the successor of $\omega 2$) comes $\omega 2 + 2$, and then $\omega 2 + 3$; next after all the terms of the sequence so begun comes $\omega 3$. (Another application of the axiom of substitution is needed at this point.) Next come $\omega 3 + 1$, $\omega 3 + 2$, $\omega 3 + 3$, $\cdots$, and after them comes $\omega 4$. In this way we get successively $\omega$, $\omega 2$, $\omega 3$, $\omega 4$, $\cdots$. An application of the axiom of substitution yields something that follows them all in the same sense in which $\omega$ follows the natural numbers; that something is $\omega^{2}$. After that the whole thing starts over again: $\omega^{2} + 1$, $\omega^{2} + 2$, $\cdots$, $\omega^{2} + \omega$, $\omega^{2} + \omega + 1$, $\omega^{2} + \omega + 2$, $\cdots$, $\omega^{2} + \omega 2$, $\omega^{2} + \omega 2 + 1$, $\cdots$, $\omega^{2} + \omega 3$, $\cdots$, $\omega^{2} + \omega 4$, $\cdots, \omega^{2} 2$, $\cdots$, $\omega^{2} 3$, $\cdots$, $\omega^{3}$, $\cdots$, $\omega^{4}$, $\cdots$, $\omega^{\omega}$, $\cdots$, $\omega^{(\omega^{\omega})}$, $\cdots$, $\omega^{(\omega^{(\omega^{\omega})})}$, $\cdots$. The next one after all that is $\varepsilon_{0}$; then come $\varepsilon_{0} + 1$, $\varepsilon_{0} +2$, $\cdots$, $\varepsilon_{0} + \omega$, $\cdots$, $\varepsilon_{0} + \omega 2$, $\cdots$, $\varepsilon_{0} + \omega^{2}$, $\cdots$, $\varepsilon_{0} + \omega^{\omega}$, $\cdots$, $\varepsilon_{0} 2$, $\cdots$, $\varepsilon_{0} \omega$, $\cdots$, $\varepsilon_{0} \omega^{\omega}$, $\cdots$, $\varepsilon_{0}^{2}$, $\cdots \cdots \cdots$.
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

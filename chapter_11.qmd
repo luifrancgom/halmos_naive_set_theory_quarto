@@ -41,11 +41,9 @@ etc. The "etc." means that we hereby adopt the usual notation, and, in what foll
 From what has been said so far it does not follow that the construction of successors can be carried out ad infinitum within one and the same set. What we need is a new set-theoretic principle.
 
 ::: {#cnj-infinity}
-
 ## Axiom of infinity`\index{axiom of infinity}`{=latex}
 
 There exists a set containing $0$ and containing the successor of each of its elements.
-
 :::
 
 The reason for the name of the axiom should be clear. We have not yet given a precise definition of infinity, but it seems reasonable that sets such as the ones that the axiom of infinity describes deserve to be called infinite.
@@ -85,3 +83,7 @@ $$
 $$
 
 The word "sequence" is used in a few different ways in the mathematical literature, but the differences among them are more notational than conceptual. The most common alternative starts at $1$ instead of $0$; in other words, it refers to a family whose index set is $\omega - \{ 0 \}$ instead of $\omega$.
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

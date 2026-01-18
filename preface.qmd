@@ -16,7 +16,7 @@ https://github.com/orgs/quarto-dev/discussions/13178
 https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax
 -->
 
-::: {.flushright latex=""}
+::: {.flushright latex="" custom-style="flushright"}
 P. R. H.
 :::
 
@@ -36,4 +36,8 @@ https://github.com/orgs/quarto-dev/discussions/9839
 \endgroup
 \mainmatter
 ```
+:::
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::

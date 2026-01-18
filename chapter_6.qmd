@@ -59,7 +59,6 @@ It is easy to locate the source of the mistrust and suspicion that many mathemat
 The charge of artificiality is true; but it is not too high a price to pay for conceptual economy. The concept of an ordered pair could have been introduced as an additional primitive, axiomatically endowed with just the right properties, no more and no less. In some theories this is done. The mathematician's choice is between having to remember a few more axioms and having to forget a few accidental facts; the choice is pretty clearly a matter of taste. Similar choices occur frequently in mathematics; in this book, for instance, we shall encounter them again in connection with the definitions of numbers of various kinds.
 
 ::: {#exr-6-1}
-
 If $A$, $B$, $X$, and $Y$ are sets, then
 
 $$
@@ -70,6 +69,9 @@ $$
 \end{aligned}
 $$
 
-If either $A = \emptyset$ or $B = \emptyset$, then $A \times B = \emptyset$, and conversely. If $A \subset X$ and $B \subset Y$, then $A \times B \subset X \times Y$, and (provided $A \times B \neq \emptyset$) conversely. 
+If either $A = \emptyset$ or $B = \emptyset$, then $A \times B = \emptyset$, and conversely. If $A \subset X$ and $B \subset Y$, then $A \times B \subset X \times Y$, and (provided $A \times B \neq \emptyset$) conversely.
+:::
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::

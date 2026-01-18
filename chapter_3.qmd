@@ -20,11 +20,9 @@ The empty set is a subset of every set, or, in other words, $\emptyset \subset A
 The set theory developed so far is still a pretty poor thing; for all we know there is only one set and that one is empty. Are there enough sets to ensure that every set is an element of some set? Is it true that for any two sets there is a third one that they both belong to? What about three sets, or four, or any number? We need a new principle of set construction to resolve such questions. The following principle is a good beginning.
 
 ::: {#cnj-pairing}
-
 ## Axiom of pairing`\index{axiom of pairing}`{=latex}
 
 For any two sets there exists a set that they both belong to.
-
 :::
 
 
@@ -109,3 +107,7 @@ $$
 In case $S(x)$ is $(x \notin x)$, or in case $S(x)$ is $(x = x)$, the specified $x$'s do not constitute a set. 
 
 Despite the maxim about never getting something for nothing, it seems a little harsh to be told that certain sets are not really sets and even their names must never be mentioned. Some approaches to set theory try to soften the blow by making systematic use of such illegal sets but just not calling them sets; the customary word is "class"`\index{class}`{=latex}. A precise explanation of what classes really are and how they are used is irrelevant in the present approach. Roughly speaking, a class may be identified with a condition (sentence), or, rather, with the "extension" of a condition.
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::

@@ -21,9 +21,7 @@ f(f^{-1}(B)) \subset B.
 $$
 
 ::: {.proof}
-
 If $y \in f(f^{-1}(B))$, then $y = f(x)$ for some $x$ in $f^{-1}(B)$; this means that $y = f(x)$ and $f(x) \in B$, and therefore $y \in B$.
-
 :::
 
 If $f$ maps $X$ onto $Y$, then 
@@ -33,9 +31,7 @@ f(f^{-1}(B)) = B.
 $$
 
 ::: {.proof}
-
 If $y \in B$, then $y = f(x)$ for some $x$ in $X$, and therefore for some $x$ in $f^{-1}(B)$; this means that $y \in f(f^{-1}(B))$.
-
 :::
 
 If $A \subset X$, then 
@@ -45,9 +41,7 @@ A \subset f^{-1}(f(A))
 $$
 
 ::: {.proof}
-
 If $x \in A$, then $f(x) \in f(A)$; this means that $x \in f^{-1}(f(A))$.
-
 :::
 
 If $f$ is one-to-one, then 
@@ -57,9 +51,7 @@ A = f^{-1}(f(A))
 $$
 
 ::: {.proof}
-
 If $x \in f^{-1}(f(A))$, then $f(x) \in f(A)$, and therefore $f(x) = f(u)$ for some $u$ in $A$; this implies that $x = u$ and hence that $x \in A$. 
-
 :::
 
 The algebraic behavior of $f^{-1}$ is unexceptionable. If $\{ B_{i} \}$ is a family of subsets of $Y$, then 
@@ -99,7 +91,9 @@ The algebraic properties of inversion and composition are the same for relations
 The algebra of relations provides some amusing formulas. Suppose that, temporarily, we consider relations in one set $X$ only, and, in particular, let the relation of equality in $X$ (which is the same as the identity mapping on $X$). The relation $I$ acts as a multiplicative unit; this means that $IR = RI = R$ for every relation $R$ in $X$. Query: is there a connection among $I$, $RR^{-1}$, and $R^{-1}R$? The three defining properties of an equivalence relation can be formulated in algebraic terms as follows: reflexivity means $I \subset R$, symmetry means $R \subset R^{-1}$, and transitivity means $RR \subset R$.
 
 ::: {#exr-10-1}
-
 (Assume in each case that $f$ is a function from $X$ to $Y$) $(i)$ If $g$ is a function from $Y$ to $X$ such that $gf$ is the identity on $X$, then $f$ is one-to-one and $g$ maps $Y$ onto $X$. $(ii)$ A necessary and sufficient condition that $f(A \cap B) = f(A) \cap f(B)$ for all subsets $A$ and $B$ of $X$ is that $f$ be one-to-one. $(iii)$ A necessary and sufficient condition that $f(X - A) \subset Y - f(A)$ for all subsets $A$ of $X$ is that $f$ be one-to-one. $(iv)$ A necessary and sufficient condition that $Y - f(A) \subset f(X - A)$ for all subsets $A$ of $X$ is that $f$ map $X$ onto $Y$.
+:::
 
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
 :::
