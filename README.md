@@ -19,6 +19,7 @@ You can access the rendered versions of the book through the following links:
 | :--- | :--- |
 | **🌐 HTML** | [View Web Version](https://luifrancgom.github.io/halmos_naive_set_theory_quarto/) |
 | **📄 PDF** | [Download PDF](https://luifrancgom.github.io/halmos_naive_set_theory_quarto/Naive-Set-Theory.pdf) |
+| **📑 DOCX** | [Download DOCX](https://luifrancgom.github.io/halmos_naive_set_theory_quarto/Naive-Set-Theory.docx) |
 
 ---
 
