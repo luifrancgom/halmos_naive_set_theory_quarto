@@ -78,6 +78,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<!-- =========================================================================
+     MathJax Configuration
+     =========================================================================
+     NOTE: The 'mathtools' extension is required—specifically for Chapter 9—to
+     properly render the \bigtimes symbol
+     ========================================================================= -->
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mathtools'] },
+    tex: { packages: { '[+]': ['mathtools'] } }
+  };
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>

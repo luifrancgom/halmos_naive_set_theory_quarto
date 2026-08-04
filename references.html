@@ -94,6 +94,18 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<!-- =========================================================================
+     MathJax Configuration
+     =========================================================================
+     NOTE: The 'mathtools' extension is required—specifically for Chapter 9—to
+     properly render the \bigtimes symbol
+     ========================================================================= -->
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mathtools'] },
+    tex: { packages: { '[+]': ['mathtools'] } }
+  };
+</script>
 
 
 </head>
