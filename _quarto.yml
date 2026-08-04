@@ -65,8 +65,8 @@ format:
       - scss/custom.scss
     html-math-method: mathjax
     # includes
-    # include-in-header: 
-    #   - file: partials/html/header.html
+    include-in-header: 
+      - file: partials/html/header.html
   pdf:
     # format options
     pdf-engine: xelatex
